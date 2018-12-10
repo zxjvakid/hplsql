@@ -30,7 +30,7 @@
 </property>
 <property>
   <name>hplsql.conn.hive2conn</name>
-  <value>org.apache.hive.jdbc.HiveDriver;jdbc:hive2://localhost:10000;hive;hive</value>
+  <value>org.apache.hive.jdbc.HiveDriver;jdbc:hive2://10.10.10.104:10000;hive;hive</value>
   <description>HiveServer2 JDBC connection</description>
 </property>
 <property>
@@ -64,7 +64,8 @@
 </property>
 <property>
   <name>hplsql.dual.table</name>
-  <value>default.dual</value>
+  <!--<value>default.dual</value>-->
+  <value></value>
   <description>Single row, single column table for internal operations</description>
 </property>
 <property>

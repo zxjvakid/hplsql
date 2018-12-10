@@ -58,7 +58,7 @@ public class Conn {
       Connection conn = getConnection(connName);
       runPreSql(connName, conn);
       Statement stmt = conn.createStatement();
-      exec.info(null, "Starting query");
+      exec.info(null, "Conn "+ conn + ":Starting query");
       timer.start();
       ResultSet rs = stmt.executeQuery(query.sql);
       timer.stop();
@@ -105,7 +105,7 @@ public class Conn {
       runPreSql(connName, conn);
       Statement stmt = conn.createStatement();
       ResultSet rs = null;
-      exec.info(null, "Starting SQL statement");
+      exec.info(null, "Conn "+ conn +":Starting SQL statement");
       timer.start();
       if (stmt.execute(sql)) {
         rs = stmt.getResultSet();        
@@ -257,7 +257,14 @@ public class Conn {
     connStrings.put(name, connStr);
     connTypes.put(name, getType(connStr));
   }
-  
+
+  public void addConnection(String name, Connection connection) {
+    if(connections.get(name) == null){
+      connections.put(name, new Stack<Connection>());
+    }
+    connections.get(name).add(connection);
+  }
+
   /**
    * Add initialization statements for the specified connection
    */
@@ -278,5 +285,9 @@ public class Conn {
    */
   public void addPreSql(String name, ArrayList<String> sql) {
     preSql.put(name, sql); 
+  }
+
+  public HashMap<String, Stack<Connection>> getConnections() {
+    return connections;
   }
 }

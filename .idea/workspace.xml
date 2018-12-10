@@ -2,101 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bcd06a3-833d-4dae-8194-eed7779d5229" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_14_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jamesmurty_utils_java_xmlbuilder_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_42.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jolbox_bonecp_0_8_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_el_commons_el_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_jdo_jdo_api_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jets3t_jets3t_0_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_abego_treelayout_org_abego_treelayout_core_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_ST4_4_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_1_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derby_10_10_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hive_hive_ant_0_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hive_hive_common_0_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hive_hive_exec_0_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hive_hive_metastore_0_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hive_hive_serde_0_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hive_hive_shims_0_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hive_shims_hive_shims_0_20S_0_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hive_shims_hive_shims_0_20_0_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hive_shims_hive_shims_0_23_0_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hive_shims_hive_shims_common_0_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hive_shims_hive_shims_common_secure_0_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_thrift_libfb303_0_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_thrift_libthrift_0_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_2_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_8_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_8_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_datanucleus_datanucleus_api_jdo_3_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_datanucleus_datanucleus_core_3_2_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_datanucleus_datanucleus_rdbms_3_2_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_6_1_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_tukaani_xz_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__oro_oro_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tomcat_jasper_compiler_5_5_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tomcat_jasper_runtime_5_5_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hive-hplsql.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Executor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/CLIService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/auth/TSetIpAddressProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/Handle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/HandleIdentifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/HplsqlResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/OperationOutPut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/conf/HplsqlConf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/exception/HplsqlException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/ExecuteStatementOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/GetTypeInfoOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/OperationHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/OperationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/OperationState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/OperationStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/OperationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/SQLOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/HplsqlSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/HplsqlSessionImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/SessionHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/SessionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/SessionState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/thrift/ThriftBinaryCLIService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/thrift/ThriftCLIService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jamesmurty_utils_java_xmlbuilder_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_42.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jets3t_jets3t_0_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hive_hive_common_0_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hive_hive_serde_0_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_thrift_libfb303_0_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_thrift_libthrift_0_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_8_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_8_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hive-hplsql.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hive-hplsql.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Conn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Conn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Exec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Exec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/HplsqlBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/HplsqlBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/HplsqlLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/HplsqlListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/HplsqlParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/HplsqlVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hplsql-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hplsql-site.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -105,6 +80,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -122,25 +100,224 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="OperationOutPut.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/OperationOutPut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+            <state relative-caret-position="72">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestHplsqlLocal.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/hive/hplsql/TestHplsqlLocal.java">
+      <file leaf-file-name="CLIService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/CLIService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="37" column="15" lean-forward="true" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+            <state relative-caret-position="1712">
+              <caret line="115" column="73" selection-start-line="115" selection-start-column="73" selection-end-line="115" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HplsqlResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/HplsqlResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Operation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/Operation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="657">
+              <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExecuteStatementOperation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/ExecuteStatementOperation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#852#853#0" expanded="true" />
+                <element signature="e#884#885#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OperationManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/OperationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThriftCLIService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/thrift/ThriftCLIService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="149" column="49" selection-start-line="149" selection-start-column="33" selection-end-line="149" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HplsqlSessionImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/HplsqlSessionImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="98" column="61" lean-forward="true" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Conn.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Conn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hplsql-site.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/hplsql-site.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="43" column="11" lean-forward="true" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseMetaData.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/sql/DatabaseMetaData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="71" column="33" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Executor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Executor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="35" column="46" lean-forward="true" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultSet.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThriftBinaryCLIService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/thrift/ThriftBinaryCLIService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLOperation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/SQLOperation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1127#1128#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetTypeInfoOperation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/GetTypeInfoOperation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dual</find>
+      <find>visitprin</find>
+      <find>signals</find>
+      <find>sessHandle</find>
+      <find>conf</find>
+      <find>connections</find>
+      <find>operationManager</find>
+      <find>buildSql</find>
+      <find>executeStatementAsync</find>
+      <find>[pool-1-thread-2] Exec.java:743 - org.apache.hive.hplsql.Exec@5bc27fbc:exec start ~~~~~~~~~~~~~~~~</find>
+      <find>[pool-1-thread-4] ThriftCLIService.java:141 - -------ExecuteStatement---------</find>
+      <find>openSession()</find>
+      <find>ef89ff52-b6a3-4359-a59c-d57274f4c65a</find>
+      <find>operationStart</find>
+      <find>stmtConnList</find>
+      <find>defaultConnection</find>
+      <find>exec</find>
+      <find>getResultSetMetadata()</find>
+      <find>openSession</find>
+      <find>Starting query</find>
+      <find>~~~~~out~~~~~</find>
+      <find>objectConnMap</find>
+      <find>sign</find>
+      <find>System.out.println</find>
+      <find>System.out.print</find>
+      <find />
+      <find>preSql</find>
+      <find>org.apache.hive.service.rpc.thrift</find>
+      <find>org.apache.hive.service.cli.thrift.</find>
+      <find>LOG</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>org.apache.hive.service.cli.thrift</replace>
+      <replace>org.apache.hive.service.rpc.thrift.</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -148,7 +325,55 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/execute/Executor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/execute/TableSchema.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/execute/ColumnDescriptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/TypeQualifiers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/RowSet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/RowBasedSet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/TableSchema.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/ColumnDescriptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/TypeDescriptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/ColumnValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/FetchType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/FetchOrientation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/execute/HplsqlResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/OperationLog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/OperationOutPut.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/idea.vmoptions" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/auth/TSetIpAddressProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Hplsql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/OperationExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/HplsqlSessionBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/SessionState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Conn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Select.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/GetInfoValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/GetInfoType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/conf/HplsqlConf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/DatabaseMetaDataOperation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/ColumnBasedSet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/RowSetFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/Operation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/SessionHandle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/OperationState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/thrift/ThriftBinaryCLIService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/CLIService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/OperationManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/thrift/ThriftCLIService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Exec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/SQLOperation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/ExecuteStatementOperation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/HplsqlSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/SessionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/HplsqlSessionImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Executor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/exception/HplsqlResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/HplsqlResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/GetTypeInfoOperation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/DatabaseMetaDataResultSet.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hplsql-site.xml" />
       </list>
     </option>
   </component>
@@ -158,9 +383,26 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Hive HPL/SQL" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Hive HPL/SQL" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -168,17 +410,19 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-40" />
-    <option name="y" value="-1056" />
-    <option name="width" value="1719" />
-    <option name="height" value="1002" />
+    <option name="x" value="-239" />
+    <option name="y" value="-1049" />
+    <option name="width" value="1793" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,14 +437,81 @@
             </path>
             <path>
               <item name="hplsql-0.3.17" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="hplsql-0.3.17" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hplsql-0.3.17" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hplsql-0.3.17" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hplsql-0.3.17" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hplsql-0.3.17" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hplsql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hplsql-0.3.17" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hplsql-0.3.17" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hplsql" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hplsql-0.3.17" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hplsql-0.3.17" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hplsql" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hplsql-0.3.17" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hplsql-0.3.17" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hplsql" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="operation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hplsql-0.3.17" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hplsql-0.3.17" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hplsql" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="thrift" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hplsql-0.3.17" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hplsql-0.3.17" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hplsql-0.3.17" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hplsql-0.3.17" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,9 +520,24 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.apache.hive.hplsql" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.apache.hive.hplsql.service.common" />
+      <recent name="org.apache.hive.hplsql.service" />
+      <recent name="org.apache.hive.hplsql.execute" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -225,9 +551,54 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Hplsql" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.apache.hive.hplsql.Hplsql" />
+      <module name="hive-hplsql" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.apache.hive.hplsql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.apache.hive.hplsql.Test" />
+      <module name="hive-hplsql" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.apache.hive.hplsql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="TestHplsqlLocal.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hive-hplsql" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.apache.hive.hplsql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.apache.hive.hplsql" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.hive.hplsql.TestHplsqlLocal" />
+      <option name="METHOD_NAME" value="testAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -267,6 +638,18 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.Hplsql" />
+      <item itemvalue="JUnit.TestHplsqlLocal.testAdd" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.TestHplsqlLocal.testAdd" />
+        <item itemvalue="Application.Hplsql" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -283,102 +666,1062 @@
       <workItem from="1542958447660" duration="189000" />
       <workItem from="1542958657126" duration="36000" />
       <workItem from="1542958721016" duration="282000" />
+      <workItem from="1543225925018" duration="15591000" />
+      <workItem from="1543302455223" duration="32690000" />
+      <workItem from="1543401669630" duration="54704000" />
+      <workItem from="1543803175376" duration="35244000" />
+      <workItem from="1543900698240" duration="46877000" />
+      <workItem from="1544059908389" duration="29167000" />
+      <workItem from="1544146811097" duration="14106000" />
+      <workItem from="1544166345287" duration="16264000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestHplsqlLocal_testAdd - 2018.12.07 at 15h 40m 31s.xml">
+      <configuration name="TestHplsqlLocal.testAdd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestHplsqlLocal_testAdd - 2018.12.07 at 15h 44m 58s.xml">
+      <configuration name="TestHplsqlLocal.testAdd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestHplsqlLocal_testAdd - 2018.12.07 at 15h 45m 06s.xml">
+      <configuration name="TestHplsqlLocal.testAdd" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2046000" />
+    <option name="totallyTimeSpent" value="246693000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-40" y="-1056" width="1719" height="1002" extended-state="0" />
+    <frame x="-239" y="-1049" width="1793" height="1049" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Tool Output" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.32993197" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.33571854" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Tool Output" order="8" sideWeight="0.49749303" weight="0.25933832" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.08077995" side_tool="true" weight="0.3895411" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.16162193" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22778772" />
-      <window_info anchor="right" id="Database" order="3" weight="0.21194379" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="7" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.21182549" />
+      <window_info anchor="bottom" x="-7" y="-325" width="1283" height="249" id="ANTLR Preview" order="11" sideWeight="0.7977716" weight="0.20811099" />
+      <window_info id="Structure" order="1" sideWeight="0.14951456" side_tool="true" visible="true" weight="0.21359223" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6730539" weight="0.43543223" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4994012" weight="0.32870865" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49640718" weight="0.3191035" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" sideWeight="0.4988024" weight="0.32870865" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.91922003" visible="true" weight="0.44564047" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.14514408" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49863163" weight="0.339934" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.85048544" visible="true" weight="0.21359223" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4935933" weight="0.53928953" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7746781" visible="true" weight="0.10848401" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49863163" weight="0.34013605" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Tool Output" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.22532189" side_tool="true" weight="0.35465926" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4976011" weight="0.21696801" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32993197" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32993197" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.1629393" />
+      <window_info anchor="bottom" x="879" y="-1057" width="1920" height="1057" id="ANTLR Preview" order="12" sideWeight="0.4969896" weight="0.20408164" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8798752" visible="true" weight="0.25250357" />
+      <window_info anchor="right" id="Database" order="6" weight="0.21194379" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Structure" order="1" sideWeight="0.1201248" side_tool="true" visible="true" weight="0.25250357" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39909297" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/thrift/ThriftCLIService.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="54" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((Exec)((Exec)((Exec)((Exec)((Exec)((Exec)((Exec)((Exec)((Exec)this).exec).exec).exec).exec).exec).exec).exec).exec).exec" language="JAVA" custom="org.apache.hive.hplsql.Exec" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>((Exec)((Exec)((Exec)((Exec)((Exec)((Exec)((Exec)((Exec)((Exec)this).exec).exec).exec).exec).exec).exec).exec).exec).exec</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>org.apache.hive.hplsql.Exec</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hive/hive-service/2.0.0/hive-service-2.0.0.jar!/org/apache/hive/service/cli/RowSetFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+        <state relative-caret-position="180">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/hive/hplsql/TestHplsqlLocal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="37" column="15" lean-forward="true" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+        <state relative-caret-position="233">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/hive/hplsql/TestHplsqlDb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/lib/sa-jdi.jar!/sun/jvm/hotspot/CommandProcessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/org.apache.hive.hplsql:hive-hplsql:0.3.17">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>org.apache.hive.hplsql:hive-hplsql:0.3.17</OriginalElement>
+          <nodes>
+            <node x="" y="">org.apache.hive.hplsql:hive-hplsql:0.3.17</node>
+            <node x="" y="">com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">commons-cli:commons-cli:jar:1.2</node>
+            <node x="" y="">commons-lang:commons-lang:jar:2.6</node>
+            <node x="" y="">commons-io:commons-io:jar:2.4</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-ant:jar:0.13.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-ant:jar:0.13.1/commons-lang:commons-lang:jar:2.4</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-ant:jar:0.13.1/org.apache.velocity:velocity:jar:1.5</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-ant:jar:0.13.1/org.apache.velocity:velocity:jar:1.5/commons-collections:commons-collections:jar:3.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-ant:jar:0.13.1/org.apache.velocity:velocity:jar:1.5/commons-lang:commons-lang:jar:2.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-ant:jar:0.13.1/org.apache.velocity:velocity:jar:1.5/oro:oro:jar:2.0.8</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-metastore:jar:0.13.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-metastore:jar:0.13.1/org.apache.hive:hive-serde:jar:0.13.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-metastore:jar:0.13.1/com.google.guava:guava:jar:11.0.2</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-metastore:jar:0.13.1/com.jolbox:bonecp:jar:0.8.0.RELEASE</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-metastore:jar:0.13.1/com.jolbox:bonecp:jar:0.8.0.RELEASE/com.google.guava:guava:jar:15.0</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-metastore:jar:0.13.1/com.jolbox:bonecp:jar:0.8.0.RELEASE/org.slf4j:slf4j-api:jar:1.7.2</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-metastore:jar:0.13.1/commons-lang:commons-lang:jar:2.6</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-metastore:jar:0.13.1/org.apache.derby:derby:jar:10.10.1.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-metastore:jar:0.13.1/org.datanucleus:datanucleus-api-jdo:jar:3.2.6</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-metastore:jar:0.13.1/org.datanucleus:datanucleus-rdbms:jar:3.2.9</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-metastore:jar:0.13.1/javax.jdo:jdo-api:jar:3.0.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-metastore:jar:0.13.1/javax.jdo:jdo-api:jar:3.0.1/javax.transaction:jta:jar:1.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-metastore:jar:0.13.1/org.apache.thrift:libfb303:jar:0.9.0</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-metastore:jar:0.13.1/org.apache.thrift:libthrift:jar:0.9.0</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-shims:jar:0.13.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-shims:jar:0.13.1/org.apache.hive.shims:hive-shims-common:jar:0.13.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-shims:jar:0.13.1/org.apache.hive.shims:hive-shims-common:jar:0.13.1/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-shims:jar:0.13.1/org.apache.hive.shims:hive-shims-common:jar:0.13.1/org.apache.thrift:libthrift:jar:0.9.3</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-shims:jar:0.13.1/org.apache.hive.shims:hive-shims-0.20:jar:0.13.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-shims:jar:0.13.1/org.apache.hive.shims:hive-shims-0.20:jar:0.13.1/org.mortbay.jetty:jetty:jar:6.1.26</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-shims:jar:0.13.1/org.apache.hive.shims:hive-shims-0.20:jar:0.13.1/org.mortbay.jetty:jetty:jar:6.1.26/org.mortbay.jetty:jetty-util:jar:6.1.26</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-shims:jar:0.13.1/org.apache.hive.shims:hive-shims-0.20:jar:0.13.1/org.mortbay.jetty:jetty:jar:6.1.26/org.mortbay.jetty:servlet-api:jar:2.5-20081211</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-shims:jar:0.13.1/org.apache.hive.shims:hive-shims-common-secure:jar:0.13.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-shims:jar:0.13.1/org.apache.hive.shims:hive-shims-common-secure:jar:0.13.1/commons-lang:commons-lang:jar:2.6</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-shims:jar:0.13.1/org.apache.hive.shims:hive-shims-common-secure:jar:0.13.1/org.apache.thrift:libthrift:jar:0.9.3</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-shims:jar:0.13.1/org.apache.hive.shims:hive-shims-0.20S:jar:0.13.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-shims:jar:0.13.1/org.apache.hive.shims:hive-shims-0.23:jar:0.13.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.hive:hive-shims:jar:0.13.1/org.apache.hive.shims:hive-shims-0.23:jar:0.13.1/commons-lang:commons-lang:jar:2.6</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/commons-codec:commons-codec:jar:1.4</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/commons-httpclient:commons-httpclient:jar:3.0.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/commons-httpclient:commons-httpclient:jar:3.0.1/junit:junit:jar:3.8.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/commons-httpclient:commons-httpclient:jar:3.0.1/commons-logging:commons-logging:jar:1.0.3</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/commons-httpclient:commons-httpclient:jar:3.0.1/commons-codec:commons-codec:jar:1.2</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.commons:commons-lang3:jar:3.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.antlr:antlr-runtime:jar:3.4</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.antlr:antlr-runtime:jar:3.4/org.antlr:stringtemplate:jar:3.2.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.antlr:antlr-runtime:jar:3.4/antlr:antlr:jar:2.7.7</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.antlr:ST4:jar:4.0.4</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.antlr:ST4:jar:4.0.4/org.antlr:antlr-runtime:jar:3.3</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.avro:avro:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.avro:avro:jar:1.7.5/org.codehaus.jackson:jackson-core-asl:jar:1.9.13</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.avro:avro:jar:1.7.5/org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.avro:avro:jar:1.7.5/com.thoughtworks.paranamer:paranamer:jar:2.3</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.avro:avro:jar:1.7.5/org.xerial.snappy:snappy-java:jar:1.0.5</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.avro:avro:jar:1.7.5/org.slf4j:slf4j-api:jar:1.6.4</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.ant:ant:jar:1.9.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.ant:ant:jar:1.9.1/org.apache.ant:ant-launcher:jar:1.9.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.commons:commons-compress:jar:1.4.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.commons:commons-compress:jar:1.4.1/org.tukaani:xz:jar:1.0</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.thrift:libfb303:jar:0.9.3</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.zookeeper:zookeeper:jar:3.4.5</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.zookeeper:zookeeper:jar:3.4.5/org.slf4j:slf4j-api:jar:1.6.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.zookeeper:zookeeper:jar:3.4.5/log4j:log4j:jar:1.2.15</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.zookeeper:zookeeper:jar:3.4.5/jline:jline:jar:0.9.94</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.apache.zookeeper:zookeeper:jar:3.4.5/jline:jline:jar:0.9.94/junit:junit:jar:4.11</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.codehaus.groovy:groovy-all:jar:2.1.6</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.datanucleus:datanucleus-core:jar:3.2.10</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/stax:stax-api:jar:1.0.1</node>
+            <node x="" y="">org.apache.hive:hive-exec:jar:0.13.1/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.antlr:antlr4-runtime:jar:4.5</node>
+            <node x="" y="">org.antlr:antlr4-runtime:jar:4.5/org.abego.treelayout:org.abego.treelayout.core:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.hadoop:hadoop-annotations:jar:3.1.0</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.hadoop:hadoop-annotations:jar:3.1.0/jdk.tools:jdk.tools:jar:1.8</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.commons:commons-math3:jar:3.1.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.httpcomponents:httpclient:jar:4.5.2</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.httpcomponents:httpclient:jar:4.5.2/org.apache.httpcomponents:httpcore:jar:4.4.4</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.httpcomponents:httpclient:jar:4.5.2/commons-logging:commons-logging:jar:1.2</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.httpcomponents:httpclient:jar:4.5.2/commons-codec:commons-codec:jar:1.9</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/commons-codec:commons-codec:jar:1.11</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/commons-io:commons-io:jar:2.5</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/commons-net:commons-net:jar:3.6</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/commons-collections:commons-collections:jar:3.2.2</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/javax.servlet:javax.servlet-api:jar:3.1.0</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.eclipse.jetty:jetty-server:jar:9.3.19.v20170502</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.eclipse.jetty:jetty-server:jar:9.3.19.v20170502/org.eclipse.jetty:jetty-http:jar:9.3.19.v20170502</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.eclipse.jetty:jetty-server:jar:9.3.19.v20170502/org.eclipse.jetty:jetty-io:jar:9.3.19.v20170502</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.eclipse.jetty:jetty-util:jar:9.3.19.v20170502</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.eclipse.jetty:jetty-servlet:jar:9.3.19.v20170502</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.eclipse.jetty:jetty-servlet:jar:9.3.19.v20170502/org.eclipse.jetty:jetty-security:jar:9.3.19.v20170502</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.eclipse.jetty:jetty-webapp:jar:9.3.19.v20170502</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.eclipse.jetty:jetty-webapp:jar:9.3.19.v20170502/org.eclipse.jetty:jetty-xml:jar:9.3.19.v20170502</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/javax.servlet.jsp:jsp-api:jar:2.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-core:jar:1.19</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-core:jar:1.19/javax.ws.rs:jsr311-api:jar:1.1.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-servlet:jar:1.19</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-json:jar:1.19</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-json:jar:1.19/org.codehaus.jettison:jettison:jar:1.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-json:jar:1.19/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-json:jar:1.19/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1/javax.xml.bind:jaxb-api:jar:2.2.2</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-json:jar:1.19/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1/javax.xml.bind:jaxb-api:jar:2.2.2/javax.xml.stream:stax-api:jar:1.0-2</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-json:jar:1.19/org.codehaus.jackson:jackson-core-asl:jar:1.9.2</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-json:jar:1.19/org.codehaus.jackson:jackson-mapper-asl:jar:1.9.2</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-json:jar:1.19/org.codehaus.jackson:jackson-jaxrs:jar:1.9.2</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-json:jar:1.19/org.codehaus.jackson:jackson-jaxrs:jar:1.9.2/org.codehaus.jackson:jackson-core-asl:jar:1.9.13</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-json:jar:1.19/org.codehaus.jackson:jackson-jaxrs:jar:1.9.2/org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-json:jar:1.19/org.codehaus.jackson:jackson-xc:jar:1.9.2</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-json:jar:1.19/org.codehaus.jackson:jackson-xc:jar:1.9.2/org.codehaus.jackson:jackson-core-asl:jar:1.9.13</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-json:jar:1.19/org.codehaus.jackson:jackson-xc:jar:1.9.2/org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.sun.jersey:jersey-server:jar:1.19</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/log4j:log4j:jar:1.2.17</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/commons-beanutils:commons-beanutils:jar:1.9.3</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/commons-beanutils:commons-beanutils:jar:1.9.3/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.commons:commons-configuration2:jar:2.1.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.commons:commons-configuration2:jar:2.1.1/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.commons:commons-lang3:jar:3.4</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.slf4j:slf4j-api:jar:1.7.25</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.avro:avro:jar:1.7.7</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.google.re2j:re2j:jar:1.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.google.protobuf:protobuf-java:jar:2.5.0</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.google.code.gson:gson:jar:2.2.4</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.hadoop:hadoop-auth:jar:3.1.0</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.hadoop:hadoop-auth:jar:3.1.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.hadoop:hadoop-auth:jar:3.1.0/commons-codec:commons-codec:jar:1.4</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.hadoop:hadoop-auth:jar:3.1.0/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.hadoop:hadoop-auth:jar:3.1.0/com.nimbusds:nimbus-jose-jwt:jar:4.41.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.hadoop:hadoop-auth:jar:3.1.0/com.nimbusds:nimbus-jose-jwt:jar:4.41.1/com.github.stephenc.jcip:jcip-annotations:jar:1.0-1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.hadoop:hadoop-auth:jar:3.1.0/net.minidev:json-smart:jar:2.3</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.hadoop:hadoop-auth:jar:3.1.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.hadoop:hadoop-auth:jar:3.1.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2/org.ow2.asm:asm:jar:5.0.4</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.hadoop:hadoop-auth:jar:3.1.0/org.apache.zookeeper:zookeeper:jar:3.4.9</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.hadoop:hadoop-auth:jar:3.1.0/org.apache.curator:curator-framework:jar:2.12.0</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.hadoop:hadoop-auth:jar:3.1.0/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.jcraft:jsch:jar:0.1.54</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.curator:curator-client:jar:2.12.0</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.curator:curator-client:jar:2.12.0/org.apache.zookeeper:zookeeper:jar:3.4.8</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.curator:curator-client:jar:2.12.0/com.google.guava:guava:jar:16.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.curator:curator-client:jar:2.12.0/org.slf4j:slf4j-api:jar:1.7.6</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.curator:curator-recipes:jar:2.12.0</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.curator:curator-recipes:jar:2.12.0/org.apache.curator:curator-framework:jar:2.7.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.google.code.findbugs:jsr305:jar:3.0.0</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.htrace:htrace-core4:jar:4.1.0-incubating</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.zookeeper:zookeeper:jar:3.4.5</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-client:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-client:jar:1.0.1/org.apache.kerby:kerby-config:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-client:jar:1.0.1/org.apache.kerby:kerby-config:jar:1.0.1/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-client:jar:1.0.1/org.apache.kerby:kerb-core:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-client:jar:1.0.1/org.apache.kerby:kerb-core:jar:1.0.1/org.apache.kerby:kerby-pkix:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-client:jar:1.0.1/org.apache.kerby:kerb-core:jar:1.0.1/org.apache.kerby:kerby-pkix:jar:1.0.1/org.apache.kerby:kerby-asn1:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-client:jar:1.0.1/org.apache.kerby:kerb-core:jar:1.0.1/org.apache.kerby:kerby-pkix:jar:1.0.1/org.apache.kerby:kerby-util:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-client:jar:1.0.1/org.apache.kerby:kerb-core:jar:1.0.1/org.apache.kerby:kerby-pkix:jar:1.0.1/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-client:jar:1.0.1/org.apache.kerby:kerb-common:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-client:jar:1.0.1/org.apache.kerby:kerb-common:jar:1.0.1/org.apache.kerby:kerb-crypto:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-client:jar:1.0.1/org.apache.kerby:kerb-common:jar:1.0.1/commons-io:commons-io:jar:2.4</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-client:jar:1.0.1/org.apache.kerby:kerb-util:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-client:jar:1.0.1/org.apache.kerby:token-provider:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-client:jar:1.0.1/org.apache.kerby:token-provider:jar:1.0.1/com.nimbusds:nimbus-jose-jwt:jar:3.10</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-admin:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-admin:jar:1.0.1/org.apache.kerby:kerb-server:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-admin:jar:1.0.1/org.apache.kerby:kerb-server:jar:1.0.1/org.apache.kerby:kerb-identity:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.apache.kerby:kerb-simplekdc:jar:1.0.1/org.apache.kerby:kerb-admin:jar:1.0.1/org.apache.kerby:kerby-xdr:jar:1.0.1</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.fasterxml.jackson.core:jackson-databind:jar:2.7.8</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.fasterxml.jackson.core:jackson-databind:jar:2.7.8/com.fasterxml.jackson.core:jackson-annotations:jar:2.7.0</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.fasterxml.jackson.core:jackson-databind:jar:2.7.8/com.fasterxml.jackson.core:jackson-core:jar:2.7.8</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/org.codehaus.woodstox:stax2-api:jar:3.1.4</node>
+            <node x="" y="">org.apache.hadoop:hadoop-common:jar:3.1.0/com.fasterxml.woodstox:woodstox-core:jar:5.0.3</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-shims:jar:2.2.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-storage-api:jar:2.3.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-storage-api:jar:2.3.1/org.slf4j:slf4j-api:jar:1.7.10</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-common:jar:2.8.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/org.apache.hadoop:hadoop-hdfs-client:jar:2.8.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/org.apache.hadoop:hadoop-hdfs-client:jar:2.8.0/com.squareup.okhttp:okhttp:jar:2.4.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/org.apache.hadoop:hadoop-hdfs-client:jar:2.8.0/com.squareup.okhttp:okhttp:jar:2.4.0/com.squareup.okio:okio:jar:1.4.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/com.sun.jersey:jersey-core:jar:1.9</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/com.sun.jersey:jersey-server:jar:1.9</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/commons-daemon:commons-daemon:jar:1.0.13</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/xmlenc:xmlenc:jar:0.52</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/io.netty:netty:jar:3.6.2.Final</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/io.netty:netty-all:jar:4.0.23.Final</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/xerces:xercesImpl:jar:2.9.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/xerces:xercesImpl:jar:2.9.1/xml-apis:xml-apis:jar:1.3.04</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/org.apache.htrace:htrace-core4:jar:4.0.1-incubating</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.apache.hadoop:hadoop-hdfs:jar:2.8.0/org.fusesource.leveldbjni:leveldbjni-all:jar:1.8</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.iq80.snappy:snappy:jar:0.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.hive:hive-orc:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/jline:jline:jar:2.12</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.eclipse.jetty.aggregate:jetty-all:jar:7.6.0.v20120127</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.eclipse.jetty.aggregate:jetty-all:jar:7.6.0.v20120127/org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.eclipse.jetty.aggregate:jetty-all:jar:7.6.0.v20120127/javax.mail:mail:jar:1.4.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.eclipse.jetty.aggregate:jetty-all:jar:7.6.0.v20120127/javax.activation:activation:jar:1.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.eclipse.jetty.aggregate:jetty-all:jar:7.6.0.v20120127/org.apache.geronimo.specs:geronimo-jaspic_1.0_spec:jar:1.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.eclipse.jetty.aggregate:jetty-all:jar:7.6.0.v20120127/org.apache.geronimo.specs:geronimo-annotation_1.0_spec:jar:1.1.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.eclipse.jetty.aggregate:jetty-all:jar:7.6.0.v20120127/asm:asm-commons:jar:3.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.eclipse.jetty.aggregate:jetty-all:jar:7.6.0.v20120127/asm:asm-commons:jar:3.1/asm:asm-tree:jar:3.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.eclipse.jetty.aggregate:jetty-all:jar:7.6.0.v20120127/asm:asm-commons:jar:3.1/asm:asm-tree:jar:3.1/asm:asm:jar:3.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.eclipse.jetty.orbit:javax.servlet:jar:3.0.0.v201112011016</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/joda-time:joda-time:jar:2.8.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.logging.log4j:log4j-1.2-api:jar:2.6.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.logging.log4j:log4j-1.2-api:jar:2.6.2/org.apache.logging.log4j:log4j-api:jar:2.6.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.logging.log4j:log4j-1.2-api:jar:2.6.2/org.apache.logging.log4j:log4j-core:jar:2.6.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.logging.log4j:log4j-web:jar:2.6.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.apache.commons:commons-compress:jar:1.9</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/com.tdunning:json:jar:1.8</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/io.dropwizard.metrics:metrics-core:jar:3.1.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/io.dropwizard.metrics:metrics-core:jar:3.1.0/org.slf4j:slf4j-api:jar:1.7.7</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/io.dropwizard.metrics:metrics-jvm:jar:3.1.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/io.dropwizard.metrics:metrics-jvm:jar:3.1.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/io.dropwizard.metrics:metrics-json:jar:3.1.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/io.dropwizard.metrics:metrics-json:jar:3.1.0/com.fasterxml.jackson.core:jackson-databind:jar:2.4.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/io.dropwizard.metrics:metrics-json:jar:3.1.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/com.fasterxml.jackson.core:jackson-databind:jar:2.7.8</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/com.github.joshelser:dropwizard-metrics-hadoop-metrics2-reporter:jar:0.1.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/com.github.joshelser:dropwizard-metrics-hadoop-metrics2-reporter:jar:0.1.2/io.dropwizard.metrics:metrics-core:jar:3.1.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/com.github.joshelser:dropwizard-metrics-hadoop-metrics2-reporter:jar:0.1.2/org.apache.hadoop:hadoop-common:jar:2.6.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/com.github.joshelser:dropwizard-metrics-hadoop-metrics2-reporter:jar:0.1.2/org.slf4j:slf4j-api:jar:1.7.14</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-common:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-metastore:jar:2.2.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-service-rpc:jar:2.2.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hive:hive-llap-common:jar:2.2.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hive:hive-llap-common:jar:2.2.0/org.apache.hive:hive-serde:jar:2.2.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hive:hive-llap-common:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hive:hive-llap-client:jar:2.2.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hive:hive-llap-client:jar:2.2.0/org.apache.zookeeper:zookeeper:jar:3.4.6</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hive:hive-llap-client:jar:2.2.0/org.apache.curator:apache-curator:pom:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hive:hive-llap-client:jar:2.2.0/org.apache.curator:apache-curator:pom:2.7.1/org.apache.zookeeper:zookeeper:jar:3.4.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hive:hive-llap-client:jar:2.2.0/org.apache.curator:apache-curator:pom:2.7.1/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hive:hive-llap-client:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hive:hive-llap-tez:jar:2.2.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hive:hive-llap-tez:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hive:hive-shims:jar:0.13.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hive:hive-serde:jar:3.0.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.avro:avro:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/com.beust:jcommander:jar:1.30</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.codehaus.jackson:jackson-jaxrs:jar:1.9.13</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.codehaus.jackson:jackson-xc:jar:1.9.13</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-hdfs:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.7.1/org.apache.hadoop:hadoop-yarn-server-common:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.7.1/org.apache.hadoop:hadoop-yarn-server-common:jar:2.7.1/org.apache.zookeeper:zookeeper:jar:3.4.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.7.1/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-shuffle:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-shuffle:jar:2.7.1/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.7.1/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-yarn-api:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.5.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-jobclient:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-mapreduce-client-jobclient:jar:2.7.1/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-client:jar:2.7.1/org.apache.hadoop:hadoop-annotations:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-hdfs:jar:2.8.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-yarn-registry:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-yarn-registry:jar:2.7.1/org.apache.hadoop:hadoop-yarn-common:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-yarn-registry:jar:2.7.1/org.apache.hadoop:hadoop-yarn-common:jar:2.7.1/javax.servlet:servlet-api:jar:2.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-yarn-registry:jar:2.7.1/org.apache.hadoop:hadoop-yarn-common:jar:2.7.1/com.sun.jersey:jersey-core:jar:1.19</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-yarn-registry:jar:2.7.1/org.apache.hadoop:hadoop-yarn-common:jar:2.7.1/org.codehaus.jackson:jackson-jaxrs:jar:1.9.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-yarn-registry:jar:2.7.1/org.apache.hadoop:hadoop-yarn-common:jar:2.7.1/org.codehaus.jackson:jackson-xc:jar:1.9.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-yarn-registry:jar:2.7.1/org.apache.hadoop:hadoop-yarn-common:jar:2.7.1/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-yarn-registry:jar:2.7.1/org.apache.hadoop:hadoop-yarn-common:jar:2.7.1/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-yarn-registry:jar:2.7.1/org.apache.hadoop:hadoop-yarn-common:jar:2.7.1/org.apache.hadoop:hadoop-annotations:jar:3.1.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-yarn-registry:jar:2.7.1/org.apache.hadoop:hadoop-yarn-common:jar:2.7.1/com.sun.jersey:jersey-server:jar:1.19</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-yarn-registry:jar:2.7.1/org.apache.hadoop:hadoop-yarn-common:jar:2.7.1/com.sun.jersey:jersey-json:jar:1.9</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.hadoop:hadoop-yarn-registry:jar:2.7.1/org.apache.hadoop:hadoop-yarn-common:jar:2.7.1/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.avro:avro:jar:1.7.4</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/commons-httpclient:commons-httpclient:jar:3.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.httpcomponents:httpclient:jar:4.2.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.httpcomponents:httpcore:jar:4.2.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.curator:curator-client:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.curator:curator-recipes:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/org.apache.zookeeper:zookeeper:jar:3.4.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/javax.servlet:servlet-api:jar:2.4</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/com.sun.jersey:jersey-client:jar:1.9</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/com.sun.jersey:jersey-client:jar:1.9/com.sun.jersey:jersey-core:jar:1.19</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/com.sun.jersey:jersey-json:jar:1.19</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/com.sun.jersey:jersey-server:jar:1.19</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/com.google.code.gson:gson:jar:2.2.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.slider:slider-core:jar:0.90.2-incubating/com.google.inject.extensions:guice-servlet:jar:3.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/org.apache.hbase:hbase-annotations:jar:1.1.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/org.apache.hbase:hbase-annotations:jar:1.1.1/jdk.tools:jdk.tools:jar:1.7</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/org.apache.hbase:hbase-annotations:jar:1.1.1/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/org.apache.commons:commons-math:jar:2.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.5.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.5.1/org.apache.hadoop:hadoop-yarn-common:jar:2.5.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.5.1/org.apache.avro:avro:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.5.1/org.slf4j:slf4j-log4j12:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.5.1/org.slf4j:slf4j-log4j12:jar:1.7.5/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.5.1/org.apache.hadoop:hadoop-annotations:jar:2.5.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/org.apache.hadoop:hadoop-common:jar:2.5.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/com.yammer.metrics:metrics-core:jar:2.2.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/com.yammer.metrics:metrics-core:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/com.google.guava:guava:jar:12.0.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/com.github.stephenc.findbugs:findbugs-annotations:jar:1.3.9-1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop2-compat:jar:1.1.1/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-client:jar:1.1.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-client:jar:1.1.1/org.apache.hbase:hbase-protocol:jar:1.1.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-client:jar:1.1.1/org.apache.hbase:hbase-protocol:jar:1.1.1/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-client:jar:1.1.1/org.apache.hbase:hbase-protocol:jar:1.1.1/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-client:jar:1.1.1/commons-codec:commons-codec:jar:1.4</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-client:jar:1.1.1/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-client:jar:1.1.1/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-client:jar:1.1.1/org.apache.zookeeper:zookeeper:jar:3.4.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-client:jar:1.1.1/org.apache.htrace:htrace-core:jar:3.1.0-incubating</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-client:jar:1.1.1/org.jruby.jcodings:jcodings:jar:1.0.8</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-client:jar:1.1.1/org.jruby.joni:joni:jar:2.1.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-client:jar:1.1.1/org.apache.hadoop:hadoop-auth:jar:2.5.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-client:jar:1.1.1/org.apache.hadoop:hadoop-common:jar:3.1.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-procedure:jar:1.1.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-procedure:jar:1.1.1/org.apache.hbase:hbase-common:jar:tests:1.1.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-procedure:jar:1.1.1/org.apache.hbase:hbase-common:jar:tests:1.1.1/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-procedure:jar:1.1.1/org.apache.hbase:hbase-common:jar:tests:1.1.1/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-procedure:jar:1.1.1/org.apache.hbase:hbase-common:jar:tests:1.1.1/commons-codec:commons-codec:jar:1.4</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-procedure:jar:1.1.1/org.apache.hbase:hbase-common:jar:tests:1.1.1/commons-collections:commons-collections:jar:3.2.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-procedure:jar:1.1.1/org.apache.hbase:hbase-common:jar:tests:1.1.1/org.apache.hadoop:hadoop-common:jar:3.1.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-procedure:jar:1.1.1/org.apache.hbase:hbase-common:jar:tests:1.1.1/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-procedure:jar:1.1.1/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-procedure:jar:1.1.1/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-procedure:jar:1.1.1/org.apache.hadoop:hadoop-common:jar:3.1.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-procedure:jar:1.1.1/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-prefix-tree:jar:1.1.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-prefix-tree:jar:1.1.1/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-prefix-tree:jar:1.1.1/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-prefix-tree:jar:1.1.1/org.apache.hadoop:hadoop-common:jar:3.1.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hbase:hbase-prefix-tree:jar:1.1.1/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/commons-httpclient:commons-httpclient:jar:3.0.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/commons-codec:commons-codec:jar:1.4</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/commons-collections:commons-collections:jar:3.2.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/com.sun.jersey:jersey-core:jar:1.19</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/com.sun.jersey:jersey-server:jar:1.19</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.zookeeper:zookeeper:jar:3.4.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.mortbay.jetty:jetty-sslengine:jar:6.1.26</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.mortbay.jetty:jsp-2.1:jar:6.1.14</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.mortbay.jetty:jsp-api-2.1:jar:6.1.14</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.mortbay.jetty:servlet-api-2.5:jar:6.1.14</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.codehaus.jackson:jackson-jaxrs:jar:1.9.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/com.lmax:disruptor:jar:3.3.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hadoop:hadoop-common:jar:3.1.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hadoop:hadoop-auth:jar:3.1.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hadoop:hadoop-client:jar:2.5.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-server:jar:1.1.1/org.apache.hadoop:hadoop-hdfs:jar:2.5.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-common:jar:1.1.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-common:jar:1.1.1/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-common:jar:1.1.1/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-common:jar:1.1.1/commons-codec:commons-codec:jar:1.4</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-common:jar:1.1.1/commons-collections:commons-collections:jar:3.2.2</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-common:jar:1.1.1/org.apache.hadoop:hadoop-common:jar:3.1.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-common:jar:1.1.1/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop-compat:jar:1.1.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop-compat:jar:1.1.1/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.apache.hbase:hbase-hadoop-compat:jar:1.1.1/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.hive:hive-llap-server:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/net.sf.jpam:jpam:jar:1.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/net.sf.jpam:jpam:jar:1.1/commons-logging:commons-logging:jar:1.0.4</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.apache.curator:curator-recipes:jar:2.12.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.jamon:jamon-runtime:jar:2.3.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-serde:jar:3.0.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-metastore:jar:0.13.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-shims:jar:0.13.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.hive:hive-service-rpc:jar:3.0.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.httpcomponents:httpclient:jar:4.4</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.httpcomponents:httpcore:jar:4.4</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.zookeeper:zookeeper:jar:3.4.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.curator:curator-framework:jar:2.7.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.curator:curator-framework:jar:2.7.1/org.apache.curator:curator-client:jar:2.12.0</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.curator:curator-framework:jar:2.7.1/org.apache.zookeeper:zookeeper:jar:3.4.5</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.apache.curator:curator-framework:jar:2.7.1/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hive:hive-jdbc:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">junit:junit:jar:4.11</node>
+            <node x="" y="">junit:junit:jar:4.11/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="" y="">org.apache.thrift:libfb303:jar:0.9.3</node>
+            <node x="" y="">org.apache.thrift:libthrift:jar:0.9.3</node>
+            <node x="" y="">org.apache.thrift:libthrift:jar:0.9.3/org.slf4j:slf4j-api:jar:1.7.12</node>
+            <node x="" y="">org.apache.thrift:libthrift:jar:0.9.3/org.apache.httpcomponents:httpclient:jar:4.4.1</node>
+            <node x="" y="">org.apache.thrift:libthrift:jar:0.9.3/org.apache.httpcomponents:httpcore:jar:4.4.1</node>
+            <node x="" y="">org.apache.hive:hive-service-rpc:jar:3.0.0</node>
+            <node x="" y="">org.apache.hive:hive-service-rpc:jar:3.0.0/commons-codec:commons-codec:jar:1.7</node>
+            <node x="" y="">org.apache.hive:hive-service-rpc:jar:3.0.0/tomcat:jasper-compiler:jar:5.5.23</node>
+            <node x="" y="">org.apache.hive:hive-service-rpc:jar:3.0.0/tomcat:jasper-compiler:jar:5.5.23/javax.servlet:jsp-api:jar:2.0</node>
+            <node x="" y="">org.apache.hive:hive-service-rpc:jar:3.0.0/tomcat:jasper-compiler:jar:5.5.23/ant:ant:jar:1.6.5</node>
+            <node x="" y="">org.apache.hive:hive-service-rpc:jar:3.0.0/tomcat:jasper-runtime:jar:5.5.23</node>
+            <node x="" y="">org.apache.hive:hive-service-rpc:jar:3.0.0/tomcat:jasper-runtime:jar:5.5.23/javax.servlet:servlet-api:jar:2.4</node>
+            <node x="" y="">org.apache.hive:hive-service-rpc:jar:3.0.0/tomcat:jasper-runtime:jar:5.5.23/commons-el:commons-el:jar:1.0</node>
+            <node x="" y="">org.apache.hive:hive-service-rpc:jar:3.0.0/tomcat:jasper-runtime:jar:5.5.23/commons-el:commons-el:jar:1.0/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.apache.hive:hive-service-rpc:jar:3.0.0/org.apache.hive:hive-classification:jar:3.0.0</node>
+            <node x="" y="">org.apache.hive:hive-service-rpc:jar:3.0.0/org.apache.hive:hive-classification:jar:3.0.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-service-rpc:jar:3.0.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.hive:hive-common:jar:3.0.0</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.hive:hive-shims:jar:3.0.0</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/commons-codec:commons-codec:jar:1.4</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/org.apache.arrow:arrow-format:jar:0.8.0</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/org.apache.arrow:arrow-memory:jar:0.8.0</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/org.apache.arrow:arrow-memory:jar:0.8.0/com.google.code.findbugs:jsr305:jar:3.0.2</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/org.apache.arrow:arrow-memory:jar:0.8.0/com.google.guava:guava:jar:18.0</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/org.apache.arrow:arrow-memory:jar:0.8.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/joda-time:joda-time:jar:2.9.9</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/com.fasterxml.jackson.core:jackson-core:jar:2.7.9</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/com.fasterxml.jackson.core:jackson-annotations:jar:2.7.9</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/com.fasterxml.jackson.core:jackson-databind:jar:2.7.9</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/commons-codec:commons-codec:jar:1.10</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/com.google.guava:guava:jar:14.0.1</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/io.netty:netty-buffer:jar:4.1.17.Final</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/io.netty:netty-common:jar:4.1.17.Final</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/com.google.code.findbugs:jsr305:jar:3.0.0</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.arrow:arrow-vector:jar:0.8.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/com.carrotsearch:hppc:jar:0.7.2</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/com.vlkan:flatbuffers:jar:1.2.0-3f79e055</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.avro:avro:jar:1.7.5</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/net.sf.opencsv:opencsv:jar:2.3</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.apache.parquet:parquet-hadoop-bundle:jar:1.9.0</node>
+            <node x="" y="">org.apache.hive:hive-serde:jar:3.0.0/org.slf4j:slf4j-api:jar:1.7.5</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="17854.90444894286" y="1554.0" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/FetchType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/FetchOrientation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hive/hive-service/2.2.0/hive-service-2.2.0.jar!/org/apache/hive/service/cli/RowSet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/GetInfoValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hive/hive-service/2.0.0/hive-service-2.0.0.jar!/org/apache/hive/service/cli/TableSchema.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-519">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hive/hive-exec/0.13.1/hive-exec-0.13.1.jar!/org/apache/thrift/TBaseProcessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Exec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12157">
+          <caret line="774" selection-start-line="774" selection-end-line="774" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Hplsql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hive/hive-service-rpc/3.0.0/hive-service-rpc-3.0.0.jar!/org/apache/hive/service/rpc/thrift/TGetInfoResp.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1231">
+          <caret line="304" selection-start-line="304" selection-end-line="304" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/auth/TSetIpAddressProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1307">
+          <caret line="154" column="21" selection-start-line="154" selection-start-column="21" selection-end-line="154" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/HplsqlSessionBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/conf/HplsqlConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/exception/HplsqlException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/Handle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-416">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/HandleIdentifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1010">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/OperationState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-884">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/HplsqlSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/OperationHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/OperationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/OperationStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/SessionState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/SessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-331">
+          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/SessionHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/SQLOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/ExecuteStatementOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/Operation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/session/HplsqlSessionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="98" column="61" lean-forward="true" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/thrift/ThriftBinaryCLIService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/sql/DatabaseMetaData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="71" column="33" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hive/hive-jdbc/2.2.0/hive-jdbc-2.2.0.jar!/org/apache/hive/jdbc/HiveQueryResultSet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/DatabaseMetaDataResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="35" column="46" lean-forward="true" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/GetTypeInfoOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/operation/OperationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/HplsqlResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/CLIService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1712">
+          <caret line="115" column="73" selection-start-line="115" selection-start-column="73" selection-end-line="115" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/common/OperationOutPut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/service/thrift/ThriftCLIService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="149" column="49" selection-start-line="149" selection-start-column="33" selection-end-line="149" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hive/hplsql/Conn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hplsql-site.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="43" column="11" lean-forward="true" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>hive-hplsql</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
