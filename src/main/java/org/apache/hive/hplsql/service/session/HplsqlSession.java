@@ -1,6 +1,7 @@
 package org.apache.hive.hplsql.service.session;
 
 import org.apache.hive.hplsql.Executor;
+import org.apache.hive.hplsql.service.common.conf.ServerConf;
 import org.apache.hive.hplsql.service.common.exception.HplsqlException;
 import org.apache.hive.hplsql.service.operation.OperationHandle;
 import org.apache.hive.hplsql.service.operation.OperationManager;
@@ -14,7 +15,7 @@ import java.util.Map;
 
 public interface HplsqlSession {
 
-    void open(Map<String, String> sessionConfMap) throws Exception;
+    void open(ServerConf serverConf) throws Exception;
 
     void close() throws HplsqlException;
 

@@ -18,11 +18,11 @@
 
 package org.apache.hive.hplsql;
 
-import java.net.URL;
-import java.util.HashMap;
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hive.hplsql.Exec.OnError;
+
+import java.net.URL;
+import java.util.HashMap;
 
 /**
  * HPL/SQL run-time configuration
@@ -136,7 +136,7 @@ public class Conf extends Configuration {
   /**
    * Set whether convert or not SQL for the specified connection profile
    */
-  void setConnectionConvert(String name, String value) {
+  public void setConnectionConvert(String name, String value) {
     boolean convert = false;
     if (value.compareToIgnoreCase(TRUE) == 0 || value.compareToIgnoreCase(YES) == 0) {
       convert = true;

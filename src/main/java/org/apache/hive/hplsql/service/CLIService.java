@@ -1,7 +1,7 @@
 package org.apache.hive.hplsql.service;
 
 
-import org.apache.hive.hplsql.service.common.conf.HplsqlConf;
+import org.apache.hive.hplsql.service.common.conf.ServerConf;
 import org.apache.hive.hplsql.service.common.exception.HplsqlException;
 import org.apache.hive.hplsql.service.operation.Operation;
 import org.apache.hive.hplsql.service.operation.OperationHandle;
@@ -27,17 +27,18 @@ public class CLIService {
     private final Logger LOG = LoggerFactory.getLogger(CLIService.class.getName());
     public static final TProtocolVersion SERVER_VERSION;
     private SessionManager sessionManager = new SessionManager();
+    private ServerConf serverConf = new ServerConf();
     static {
         TProtocolVersion[] protocols = TProtocolVersion.values();
         SERVER_VERSION = protocols[protocols.length - 1];
     }
 
-    public synchronized void init() {
+    public void init() {
+        serverConf.init();
     }
 
-    public SessionHandle openSession(TProtocolVersion protocol, String username, String password, String ipAddress,
-                                     Map<String, String> configuration) throws HplsqlException {
-        SessionHandle sessionHandle = sessionManager.openSession(protocol, username, password, ipAddress, configuration, false, null);
+    public SessionHandle openSession(TProtocolVersion protocol, String username, String password, String ipAddress) throws HplsqlException {
+        SessionHandle sessionHandle = sessionManager.openSession(protocol, username, password, ipAddress, serverConf);
         LOG.debug(sessionHandle + ": openSession()");
         return sessionHandle;
     }
@@ -89,7 +90,7 @@ public class CLIService {
          */
         if (operation.shouldRunAsync()) {
             try {
-                long timeout = HplsqlConf.LONG_POLLING_TIMEOUT;
+                long timeout = ServerConf.OPERATION_STATUS_POLLING_TIMEOUT;
                 operation.getBackgroundHandle().get(timeout, TimeUnit.MILLISECONDS);
             } catch (TimeoutException e) {
                 // No Op, return to the caller since long polling timeout has expired

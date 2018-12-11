@@ -1,4 +1,5 @@
 package org.apache.hive.hplsql.service.session;
+import org.apache.hive.hplsql.service.common.conf.ServerConf;
 import org.apache.hive.hplsql.service.common.exception.HplsqlException;
 import org.apache.hive.hplsql.service.operation.OperationManager;
 import org.apache.hive.service.rpc.thrift.TProtocolVersion;
@@ -23,45 +24,30 @@ public class SessionManager {
     /**
      * Opens a new session and creates a session handle.
      * The username passed to this method is the effective username.
-     * If withImpersonation is true (==doAs true) we wrap all the calls in HiveSession
-     * within a UGI.doAs, where UGI corresponds to the effective user.
      *
      * @param protocol
      * @param username
      * @param password
      * @param ipAddress
-     * @param sessionConf
-     * @param withImpersonation
-     * @param delegationToken
+     * @param serverConf
      * @return
      * @throws HplsqlException
      */
     public SessionHandle openSession(TProtocolVersion protocol, String username, String password, String ipAddress,
-                                     Map<String, String> sessionConf, boolean withImpersonation, String delegationToken)
+                                     ServerConf serverConf)
             throws HplsqlException {
-        return createSession(null, protocol, username, password, ipAddress, sessionConf,
-                withImpersonation, delegationToken).getSessionHandle();
+        return createSession(null, protocol, username, password, ipAddress, serverConf).getSessionHandle();
     }
 
-
     public HplsqlSession createSession(SessionHandle sessionHandle, TProtocolVersion protocol, String username,
-                                     String password, String ipAddress, Map<String, String> sessionConf, boolean withImpersonation,
-                                     String delegationToken)
+                                     String password, String ipAddress, ServerConf serverConf)
             throws HplsqlException{
         incrementConnections(username, ipAddress);
-        HplsqlSession session;
-        // If doAs is set to true for HiveServer2, we will create a proxy object for the session impl.
-        // Within the proxy object, we wrap the method call in a UserGroupInformation#doAs
-        if (withImpersonation) {
-            session = null;
-            // TODO
-        } else {
-            session = new HplsqlSessionImpl(sessionHandle, protocol, username, password, ipAddress);
-        }
+        HplsqlSession session = new HplsqlSessionImpl(sessionHandle, protocol, username, password, ipAddress);
         session.setSessionManager(this);
         session.setOperationManager(operationManager);
         try {
-            session.open(sessionConf);
+            session.open(serverConf);
         } catch (Exception e) {
             LOG.warn("Failed to open session", e);
             try {

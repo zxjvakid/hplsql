@@ -14,7 +14,7 @@ import java.util.concurrent.ScheduledExecutorService;
 public class SQLOperation extends ExecuteStatementOperation {
     private ScheduledExecutorService timeoutExecutor;
     private HplsqlResponse response;
-    private TableSchema resultSchema = null;
+    private TableSchema resultSchema;
     private Executor executor;
     private final boolean runAsync;
 
@@ -93,7 +93,7 @@ public class SQLOperation extends ExecuteStatementOperation {
     @Override
     public TableSchema getResultSetSchema() throws HplsqlException {
         if (resultSchema == null) {
-            resultSchema = executor.getSchema();
+            resultSchema = new TableSchema().addStringColumn("output","hpl execute output");
         }
         return resultSchema;
     }

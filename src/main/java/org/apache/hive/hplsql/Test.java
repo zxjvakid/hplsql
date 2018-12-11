@@ -8,6 +8,7 @@ public class Test {
     public static void main(String[] args) {
         CLIService cliService = new CLIService();
         ThriftCLIService service = new ThriftBinaryCLIService(cliService);
+        service.init();
         service.run();
     }
 

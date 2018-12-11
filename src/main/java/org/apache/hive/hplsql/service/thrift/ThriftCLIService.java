@@ -25,14 +25,12 @@ public abstract class ThriftCLIService implements TCLIService.Iface, Runnable {
 
     private static final TStatus OK_STATUS = new TStatus(TStatusCode.SUCCESS_STATUS);
 
-    public ThriftCLIService(CLIService service, String serviceName) {
-        //super(serviceName);
+    public ThriftCLIService(CLIService service) {
         this.cliService = service;
-
     }
 
-    public synchronized void init() {
-        // TODO
+    public void init() {
+        cliService.init();
     }
 
     @Override
@@ -55,10 +53,8 @@ public abstract class ThriftCLIService implements TCLIService.Iface, Runnable {
         String ipAddress = getIpAddress();
         TProtocolVersion protocol = getMinVersion(CLIService.SERVER_VERSION,
                 req.getClient_protocol());
-        SessionHandle sessionHandle;
-        // TODO DOAS设置为true时的处理
-        sessionHandle = cliService.openSession(protocol, userName, req.getPassword(),
-                ipAddress, req.getConfiguration());
+        SessionHandle sessionHandle = cliService.openSession(protocol, userName, req.getPassword(),
+                ipAddress);
         res.setServerProtocolVersion(protocol);
         return sessionHandle;
     }

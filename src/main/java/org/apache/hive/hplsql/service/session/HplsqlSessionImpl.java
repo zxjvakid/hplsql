@@ -1,6 +1,7 @@
 package org.apache.hive.hplsql.service.session;
 
 import org.apache.hive.hplsql.Executor;
+import org.apache.hive.hplsql.service.common.conf.ServerConf;
 import org.apache.hive.hplsql.service.common.exception.HplsqlException;
 import org.apache.hive.hplsql.service.operation.ExecuteStatementOperation;
 import org.apache.hive.hplsql.service.operation.GetTypeInfoOperation;
@@ -27,13 +28,6 @@ public class HplsqlSessionImpl implements HplsqlSession {
     private final String password;
     private final long creationTime;
     private Executor executor;
-    // TODO: some SessionState internals are not thread safe. The compile-time internals are synced
-    //       via session-scope or global compile lock. The run-time internals work by magic!
-    //       They probably work because races are relatively unlikely and few tools run parallel
-    //       queries from the same session.
-    //       1) OperationState should be refactored out of SessionState, and made thread-local.
-    //       2) Some parts of session state, like mrStats and vars, need proper synchronization.
-    //private SessionState sessionState;
     private String ipAddress;
 
     private SessionManager sessionManager;
@@ -52,7 +46,6 @@ public class HplsqlSessionImpl implements HplsqlSession {
         this.sessionHandle = sessionHandle != null ? sessionHandle : new SessionHandle(protocol);
         this.ipAddress = ipAddress;
         this.operationLock = new Semaphore(1);
-        // TODO sessionConf设置
     }
 
 
@@ -66,11 +59,11 @@ public class HplsqlSessionImpl implements HplsqlSession {
      * That's why it is important to create SessionState here rather than in the constructor.
      */
     @Override
-    public void open(Map<String, String> sessionConfMap) throws Exception {
+    public void open(ServerConf serverConf) throws Exception {
         //sessionState = new SessionState();
         //sessionState.setUserIpAddress(ipAddress);
         lastAccessTime = System.currentTimeMillis();
-        executor = new Executor();
+        executor = new Executor(serverConf);
         executor.init();
     }
 

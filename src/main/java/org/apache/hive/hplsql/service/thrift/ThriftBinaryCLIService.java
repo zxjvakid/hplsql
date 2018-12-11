@@ -15,7 +15,7 @@ public class ThriftBinaryCLIService  extends ThriftCLIService {
     public static final Logger LOG = LoggerFactory.getLogger(ThriftBinaryCLIService.class.getName());
 
     public ThriftBinaryCLIService(CLIService cliService) {
-        super(cliService, ThriftBinaryCLIService.class.getSimpleName());
+        super(cliService);
     }
     public void run() {
         try {
