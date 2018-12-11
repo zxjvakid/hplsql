@@ -18,15 +18,14 @@
 
 package org.apache.hive.hplsql;
 
+import org.antlr.v4.runtime.ParserRuleContext;
+import org.antlr.v4.runtime.misc.Interval;
+
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Stack;
-
-import org.antlr.v4.runtime.ParserRuleContext;
-import org.antlr.v4.runtime.misc.Interval;
-
 public class Select {
 
   Exec exec = null;
@@ -120,6 +119,13 @@ public class Select {
         if (trace) {
           trace(ctx, "Standalone SELECT executed: " + cols + " columns in the result set");
         }
+        for(int i=1;i<=cols;i++){
+          if (i > 1) {
+            System.out.print("\t");
+          }
+          System.out.print(rm.getColumnName(i));
+        }
+        System.out.println("");
         while (rs.next()) {
           for (int i = 1; i <= cols; i++) {
             if (i > 1) {
