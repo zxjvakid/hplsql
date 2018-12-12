@@ -1,6 +1,6 @@
 package org.apache.hive.hplsql.service.operation;
 
-import org.apache.hive.hplsql.service.common.*;
+import org.apache.hive.hplsql.service.common.OperationOutPut;
 import org.apache.hive.hplsql.service.common.exception.HplsqlException;
 import org.apache.hive.hplsql.service.session.HplsqlSession;
 import org.apache.hive.service.cli.FetchOrientation;
@@ -12,14 +12,15 @@ import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 public class OperationManager {
     private final Logger LOG = LoggerFactory.getLogger(OperationManager.class.getName());
     private final ConcurrentHashMap<OperationHandle, Operation> handleToOperation =
             new ConcurrentHashMap<OperationHandle, Operation>();
-    private final ConcurrentHashMap<String, Operation> queryIdOperation =
-            new ConcurrentHashMap<String, Operation>();
     private ExecutorService backgroundOperationPool = Executors.newFixedThreadPool(5);
 
     public ExecuteStatementOperation newExecuteStatementOperation(HplsqlSession parentSession,
@@ -39,13 +40,7 @@ public class OperationManager {
 
     private void addOperation(Operation operation) {
         LOG.info("Adding operation: " + operation.getHandle());
-        queryIdOperation.put(getQueryId(operation), operation);
         handleToOperation.put(operation.getHandle(), operation);
-    }
-    private String getQueryId(Operation operation) {
-        //return operation.getParentSession().getHplsqlConf().getVar(ConfVars.HIVEQUERYID);
-        // TODO
-        return "queryId";
     }
 
     public TableSchema getOperationResultSetSchema(OperationHandle opHandle)
@@ -104,18 +99,15 @@ public class OperationManager {
 
     public void closeOperation(OperationHandle opHandle) throws HplsqlException {
         LOG.info("Closing operation: " + opHandle);
-        Operation operation = removeOperation(opHandle);
+        Operation operation = handleToOperation.remove(opHandle);
         if (operation == null) {
             throw new HplsqlException("Operation does not exist: " + opHandle);
         }
         operation.close();
     }
 
-    private Operation removeOperation(OperationHandle opHandle) {
-        Operation operation = handleToOperation.remove(opHandle);
-        String queryId = getQueryId(operation);
-        queryIdOperation.remove(queryId);
-        LOG.info("Removed queryId: {} corresponding to operation: {}", queryId, opHandle);
-        return operation;
+    public void cancelOperation(OperationHandle opHandle) throws HplsqlException{
+        LOG.info("Cancel operation: " + opHandle);
+        getOperation(opHandle).cancel();
     }
 }

@@ -47,5 +47,11 @@ public interface HplsqlSession {
 
     SessionHandle getSessionHandle();
 
+    void closeOperation(OperationHandle operationHandle) throws HplsqlException;
 
+    void cancelOperation(OperationHandle operationHandle) throws HplsqlException;
+
+    String getUserName();
+
+    String getIpAddress();
 }

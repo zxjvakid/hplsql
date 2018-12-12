@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.LongAdder;
 public class SessionManager {
     private static final Logger LOG = LoggerFactory.getLogger(SessionManager.class);
     private final Map<SessionHandle, HplsqlSession> handleToSession =
-            new ConcurrentHashMap<SessionHandle, HplsqlSession>();
+            new ConcurrentHashMap<>();
     private final Map<String, LongAdder> connectionsCount = new ConcurrentHashMap<>();
     private int userLimit;
     private int ipAddressLimit;
@@ -63,6 +63,15 @@ public class SessionManager {
         return session;
     }
 
+    public void closeSession(SessionHandle sessionHandle) throws HplsqlException{
+        HplsqlSession session = handleToSession.remove(sessionHandle);
+        if(session == null){
+            throw new HplsqlException("Session does not exist: " + sessionHandle);
+        }
+        session.close();
+        decrementConnections(session);
+    }
+
     public int getOpenSessionCount() {
         return handleToSession.size();
     }
@@ -92,6 +101,22 @@ public class SessionManager {
         } else {
             LOG.error(violation);
             throw new HplsqlException(violation);
+        }
+    }
+
+    private void decrementConnections(final HplsqlSession session) {
+        final String username = session.getUserName();
+        final String clientIpAddress = session.getIpAddress();
+        if (trackConnectionsPerUser(username)) {
+            connectionsCount.computeIfPresent(username, (k, v) -> v).decrement();
+        }
+
+        if (trackConnectionsPerIpAddress(clientIpAddress)) {
+            connectionsCount.computeIfPresent(clientIpAddress, (k, v) -> v).decrement();
+        }
+
+        if (trackConnectionsPerUserIpAddress(username, clientIpAddress)) {
+            connectionsCount.computeIfPresent(username + ":" + clientIpAddress, (k, v) -> v).decrement();
         }
     }
 
@@ -146,4 +171,6 @@ public class SessionManager {
     public OperationManager getOperationManager() {
         return operationManager;
     }
+
+
 }

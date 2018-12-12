@@ -133,4 +133,33 @@ public class CLIService {
         LOG.debug(sessionHandle + ": getInfo()");
         return infoValue;
     }
+
+    public void closeOperation(OperationHandle operationHandle) throws HplsqlException{
+        Operation operation;
+        try {
+            operation = sessionManager.getOperationManager().getOperation(operationHandle);
+        }catch (HplsqlException e){
+            LOG.info(operationHandle + ": closeOperation() failed, the operation is not existed");
+            return;
+        }
+        operation.getParentSession().closeOperation(operationHandle);
+        LOG.debug(operationHandle + ": closeOperation()");
+    }
+
+    public void cancelOperation(OperationHandle operationHandle) throws HplsqlException{
+        Operation operation;
+        try {
+            operation = sessionManager.getOperationManager().getOperation(operationHandle);
+        }catch (HplsqlException e){
+            LOG.info(operationHandle + ": cancelOperation() failed, the operation is not existed");
+            return;
+        }
+        operation.getParentSession().cancelOperation(operationHandle);
+        LOG.debug(operationHandle + ": cancelOperation()");
+    }
+
+    public void closeSession(SessionHandle sessionHandle) throws HplsqlException{
+        sessionManager.closeSession(sessionHandle);
+        LOG.debug(sessionHandle + ": closeSession()");
+    }
 }

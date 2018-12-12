@@ -18,8 +18,8 @@ public class ServerConf{
     public static final Long OPERATION_STATUS_POLLING_TIMEOUT = 1000L;
     public static final String DEFAULT_CONN_DRIVER = "org.apache.hadoop.hive.jdbc.HiveDriver";
     private Conf hplsqlConf;
-    private final ConcurrentHashMap<String, ArrayList<String>> connInits = new ConcurrentHashMap<>();
-    private final ConcurrentHashMap<String, String> connStrs = new ConcurrentHashMap<>();
+    private final Map<String, ArrayList<String>> connInits = new ConcurrentHashMap<>();
+    private final Map<String, String> connStrs = new ConcurrentHashMap<>();
 
     public void init(){
         hplsqlConf = new Conf();
@@ -36,9 +36,9 @@ public class ServerConf{
         }
         Iterator<Map.Entry<String,String>> i = hplsqlConf.iterator();
         while (i.hasNext()) {
-            Map.Entry<String,String> item = (Map.Entry<String,String>)i.next();
-            String key = (String)item.getKey();
-            String value = (String)item.getValue();
+            Map.Entry<String,String> item = i.next();
+            String key = item.getKey();
+            String value = item.getValue();
             if (key == null || value == null || !key.startsWith("hplsql.")) {
                 continue;
             }
@@ -61,7 +61,7 @@ public class ServerConf{
     }
 
     public void setConnectionInit(String name, String connInit) {
-        ArrayList<String> a = new ArrayList<String>();
+        ArrayList<String> a = new ArrayList<>();
         String[] sa = connInit.split(";");
         for (String s : sa) {
             s = s.trim();

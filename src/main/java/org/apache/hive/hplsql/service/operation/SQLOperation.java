@@ -45,7 +45,6 @@ public class SQLOperation extends ExecuteStatementOperation {
                     LOG.error("Error running hplsql : ", e);
                 }
             };
-
             Future<?> backgroundHandle = getParentSession().getOperationManager().submitBackgroundOperation(work);
             setBackgroundHandle(backgroundHandle);
         }
@@ -72,7 +71,7 @@ public class SQLOperation extends ExecuteStatementOperation {
             /**
              * If the operation was cancelled by another thread, or the execution timed out, Driver#run
              * may return a non-zero response code. We will simply return if the operation state is
-             * CANCELED, TIMEDOUT, CLOSED or FINISHED, otherwise throw an exception
+             * CANCELED, CLOSED or FINISHED, otherwise throw an exception
              */
             if ((getStatus().getState() == OperationState.CANCELED) || (getStatus().getState() == OperationState.CLOSED) || (
                     getStatus().getState() == OperationState.FINISHED)) {
@@ -100,24 +99,35 @@ public class SQLOperation extends ExecuteStatementOperation {
 
     @Override
     public void cancel() throws HplsqlException {
-        if (shouldRunAsync()) {
-            Future<?> backgroundHandle = getBackgroundHandle();
-            if (backgroundHandle != null) {
-                boolean success = backgroundHandle.cancel(true);
-                if (success) {
-                    LOG.info(getHandle() + ":The running operation has been successfully interrupted");
-                } else {
-                    LOG.info(getHandle() + "The running operation could not be cancelled, typically because it has already completed normally");
-                }
-            }
+        OperationState opState = getStatus().getState();
+        if (opState.isTerminal()) {
+            LOG.info("Not cancel the query. Operation is already aborted in state -" + opState);
+            return;
         }
+        cancelExecuteTask();
         setState(OperationState.CANCELED);
     }
 
     @Override
     public void close() throws HplsqlException {
-        cancel();
+        cancelExecuteTask();
         setState(OperationState.CLOSED);
+        //TODO 清除执行结果
+    }
+
+    private void cancelExecuteTask(){
+        if (!shouldRunAsync()) {
+            return;
+        }
+        Future<?> backgroundHandle = getBackgroundHandle();
+        if (backgroundHandle != null) {
+            boolean success = backgroundHandle.cancel(true);
+            if (success) {
+                LOG.info(getHandle() + ":The running operation has been successfully interrupted");
+            } else {
+                LOG.info(getHandle() + "The running operation could not be cancelled, typically because it has already completed normally");
+            }
+        }
     }
 
 }

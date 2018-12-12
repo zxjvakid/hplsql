@@ -7,6 +7,7 @@ import org.apache.hive.hplsql.service.operation.OperationHandle;
 import org.apache.hive.hplsql.service.operation.OperationStatus;
 import org.apache.hive.hplsql.service.session.SessionHandle;
 import org.apache.hive.service.cli.FetchOrientation;
+import org.apache.hive.service.cli.HiveSQLException;
 import org.apache.hive.service.cli.RowSet;
 import org.apache.hive.service.cli.TableSchema;
 import org.apache.hive.service.rpc.thrift.*;
@@ -110,9 +111,18 @@ public abstract class ThriftCLIService implements TCLIService.Iface, Runnable {
     }
 
     @Override
-    public TCloseSessionResp CloseSession(TCloseSessionReq tCloseSessionReq) throws TException {
+    public TCloseSessionResp CloseSession(TCloseSessionReq req) throws TException {
         LOG.info("-------CloseSession---------");
-        return null;
+        TCloseSessionResp resp = new TCloseSessionResp();
+        try {
+            SessionHandle sessionHandle = new SessionHandle(req.getSessionHandle());
+            cliService.closeSession(sessionHandle);
+            resp.setStatus(OK_STATUS);
+        } catch (Exception e) {
+            LOG.warn("Error closing session: ", e);
+            resp.setStatus(HiveSQLException.toTStatus(e));
+        }
+        return resp;
     }
 
     /**
@@ -288,7 +298,7 @@ public abstract class ThriftCLIService implements TCLIService.Iface, Runnable {
      * @return
      * @throws TException
      */
-    //@Override
+    @Override
     public TGetPrimaryKeysResp GetPrimaryKeys(TGetPrimaryKeysReq tGetPrimaryKeysReq) throws TException {
         LOG.info("-------GetPrimaryKeys---------");
         return null;
@@ -302,7 +312,7 @@ public abstract class ThriftCLIService implements TCLIService.Iface, Runnable {
      * @return
      * @throws TException
      */
-    //@Override
+    @Override
     public TGetCrossReferenceResp GetCrossReference(TGetCrossReferenceReq tGetCrossReferenceReq) throws TException {
         LOG.info("-------GetCrossReference---------");
         return null;
@@ -349,7 +359,16 @@ public abstract class ThriftCLIService implements TCLIService.Iface, Runnable {
     @Override
     public TCancelOperationResp CancelOperation(TCancelOperationReq req) throws TException {
         LOG.info("-------CancelOperation---------");
-        return null;
+        TCancelOperationResp resp = new TCancelOperationResp();
+        try {
+            //TODO 调用该方法后未能取消SqlOperation，执行语句的线程仍继续运行，待处理。
+            cliService.cancelOperation(new OperationHandle(req.getOperationHandle()));
+            resp.setStatus(OK_STATUS);
+        } catch (Exception e) {
+            LOG.warn("Error cancelling operation: ", e);
+            resp.setStatus(HiveSQLException.toTStatus(e));
+        }
+        return resp;
     }
 
     /**
@@ -357,14 +376,22 @@ public abstract class ThriftCLIService implements TCLIService.Iface, Runnable {
      * jdbc调用入口：HiveQueryResultSet.close()->HiveStatement.closeOperationHandle(TOperationHandle stmtHandle)
      * HiveStatement.close()
      *
-     * @param tCloseOperationReq
+     * @param req
      * @return
      * @throws TException
      */
     @Override
-    public TCloseOperationResp CloseOperation(TCloseOperationReq tCloseOperationReq) throws TException {
+    public TCloseOperationResp CloseOperation(TCloseOperationReq req) throws TException {
         LOG.info("-------CloseOperation---------");
-        return null;
+        TCloseOperationResp resp = new TCloseOperationResp();
+        try {
+            cliService.closeOperation(new OperationHandle(req.getOperationHandle()));
+            resp.setStatus(OK_STATUS);
+        }catch (Exception e){
+            LOG.warn("Error close operation : ", e);
+            resp.setStatus(HplsqlException.toTStatus(e));
+        }
+        return resp;
     }
 
     /**

@@ -15,9 +15,7 @@ import org.apache.hive.service.rpc.thrift.TProtocolVersion;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.Semaphore;
 
 public class HplsqlSessionImpl implements HplsqlSession {
@@ -33,7 +31,7 @@ public class HplsqlSessionImpl implements HplsqlSession {
     private SessionManager sessionManager;
     private OperationManager operationManager;
     // Synchronized by locking on itself. 目前同一个session对象不会被多个线程同时使用。
-    private final Set<OperationHandle> opHandleSet = new HashSet<OperationHandle>();
+    private final Set<OperationHandle> opHandleSet = new HashSet<>();
 
     private volatile long lastAccessTime = System.currentTimeMillis();
     private final Semaphore operationLock;
@@ -69,7 +67,15 @@ public class HplsqlSessionImpl implements HplsqlSession {
 
     @Override
     public void close() throws HplsqlException {
-
+        List<OperationHandle> ops;
+        synchronized (opHandleSet) {
+            ops = new ArrayList<>(opHandleSet);
+            opHandleSet.clear();
+        }
+        for (OperationHandle opHandle : ops) {
+            operationManager.closeOperation(opHandle);
+        }
+        executor.close();
     }
 
     @Override
@@ -151,7 +157,29 @@ public class HplsqlSessionImpl implements HplsqlSession {
 //            return operationManager.getOperationNextRowSet(opHandle, orientation, maxRows);
 //        }
         return operationManager.getOperationOutputRowSet(opHandle, orientation, maxRows);
+    }
 
+    @Override
+    public void closeOperation(OperationHandle operationHandle) throws HplsqlException{
+        operationManager.closeOperation(operationHandle);
+        synchronized (opHandleSet) {
+            opHandleSet.remove(operationHandle);
+        }
+    }
+
+    @Override
+    public void cancelOperation(OperationHandle operationHandle) throws HplsqlException{
+        operationManager.cancelOperation(operationHandle);
+    }
+
+    @Override
+    public String getUserName() {
+        return username;
+    }
+
+    @Override
+    public String getIpAddress() {
+        return ipAddress;
     }
 
     @Override
