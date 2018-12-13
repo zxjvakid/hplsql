@@ -18,16 +18,16 @@
 
 package org.apache.hive.hplsql;
 
+import org.antlr.v4.runtime.ParserRuleContext;
+import org.apache.hive.hplsql.HplsqlParser.Create_table_columnsContext;
+import org.apache.hive.hplsql.HplsqlParser.Create_table_columns_itemContext;
+import org.apache.hive.hplsql.Var.Type;
+
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.Stack;
 import java.util.UUID;
-
-import org.antlr.v4.runtime.ParserRuleContext;
-import org.apache.hive.hplsql.Var.Type;
-import org.apache.hive.hplsql.HplsqlParser.Create_table_columns_itemContext;
-import org.apache.hive.hplsql.HplsqlParser.Create_table_columnsContext;
 
 /**
  * HPL/SQL statements execution
@@ -322,10 +322,13 @@ public class Stmt {
           for (int i = 1; i <= cols; i++) {
             if (i > 1) {
               System.out.print("\t");
+              exec.output.print("\t");
             }
             System.out.print(rs.getString(i));
+            exec.output.print(rs.getString(i));
           }
           System.out.println("");
+          exec.output.println("");
         }
       }
     }    
@@ -1003,10 +1006,13 @@ public class Stmt {
             for(int i = 1; i <= cols; i++) {
               if(i > 1) {
                 System.out.print("\t");
+                exec.output.print("\t");
               }
               System.out.print(rs.getString(i));
+              exec.output.print(rs.getString(i));
             }
             System.out.println("");
+            exec.output.println("");
           }
         }
       } 
@@ -1146,6 +1152,7 @@ public class Stmt {
     trace(ctx, "PRINT");
     if (ctx.expr() != null) {
       System.out.println(evalPop(ctx.expr()).toString());
+      exec.output.println(evalPop(ctx.expr()).toString());
     }
 	  return 0; 
   }

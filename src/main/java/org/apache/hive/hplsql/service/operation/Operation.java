@@ -1,13 +1,15 @@
 package org.apache.hive.hplsql.service.operation;
 
-import org.apache.hive.hplsql.service.common.OperationOutPut;
-import org.apache.hive.hplsql.service.session.HplsqlSession;
 import org.apache.hive.hplsql.service.common.exception.HplsqlException;
+import org.apache.hive.hplsql.service.session.HplsqlSession;
+import org.apache.hive.service.cli.FetchOrientation;
+import org.apache.hive.service.cli.RowSet;
 import org.apache.hive.service.cli.TableSchema;
 import org.apache.hive.service.rpc.thrift.TProtocolVersion;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Future;
 
@@ -20,7 +22,7 @@ public abstract class Operation {
     protected boolean hasResultSet;
     protected volatile HplsqlException operationException;
     protected volatile Future<?> backgroundHandle;
-    protected OperationOutPut operationOutPut;
+    protected OperationResult operationResult;
 
     private long operationTimeout;
     private volatile long lastAccessTime;
@@ -53,6 +55,8 @@ public abstract class Operation {
     }
 
     public abstract TableSchema getResultSetSchema() throws HplsqlException;
+
+    public abstract RowSet getNextRowSet(FetchOrientation orientation, long maxRows) throws HplsqlException;
 
     public abstract void cancel() throws HplsqlException;
 
@@ -121,7 +125,18 @@ public abstract class Operation {
         this.operationException = operationException;
     }
 
-
+    /**
+     * 验证操作对象的当前状态是否符合给定的状态
+     * @param states
+     * @throws HplsqlException
+     */
+    protected final void assertState(List<OperationState> states) throws HplsqlException {
+        if (!states.contains(state)) {
+            throw new HplsqlException("Expected states: " + states.toString() + ", but found "
+                    + this.state);
+        }
+        this.lastAccessTime = System.currentTimeMillis();
+    }
     /**
      * 获取Operation状态信息
      * @return
@@ -166,7 +181,7 @@ public abstract class Operation {
         return opHandle.getProtocolVersion();
     }
 
-    public OperationOutPut getOperationOutPut() {
-        return operationOutPut;
+    public OperationResult getOperationResult() {
+        return operationResult;
     }
 }

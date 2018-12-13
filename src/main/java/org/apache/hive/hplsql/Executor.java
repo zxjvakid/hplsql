@@ -8,13 +8,10 @@ import org.mortbay.log.Log;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.io.StringReader;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Executor {
     private static final Logger LOG = LoggerFactory.getLogger(Executor.class);
@@ -32,75 +29,71 @@ public class Executor {
         reuseConnection = openConnection();
     }
 
-    public HplsqlResponse runHpl(String statement) throws Exception {
-        synchronized (Executor.class) {
-            //TODO 应修改hplsql代码，将不同执行操作的hplsql执行结果输出到不同的地方，防止不同线程执行时都将结果打印到标准输出，造成结果数据交叉
-            String formatStmt = formatStatement(statement);
-            checkConnection();
-            // 将标准输出设置为out
-            ByteArrayOutputStream out = new ByteArrayOutputStream();
-            System.setOut(new PrintStream(out));
-            String[] args = {"-e",  formatStmt};
-            int responseCode = runHplCmd(args);
+    public synchronized HplsqlResponse runHpl(String statement) throws Exception {
+        checkStatement(statement);
+        checkConnection();
 
-            LOG.info("~~~~~out~~~~~:" + out.toString());
-            List<String> execOutputs = new ArrayList<>();
-            BufferedReader reader = new BufferedReader(new StringReader(out.toString()));
-            String line;
-            while ((line = reader.readLine()) != null) {
-                execOutputs.add(line);
-            }
-            HplsqlResponse response = new HplsqlResponse(responseCode);
-            response.setOutputStrings(execOutputs);
-            return response;
-        }
+        //hplsql执行结果会输出到不同的out对象，防止不同线程执行时都将结果打印到标准输出，造成结果数据交叉
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        PrintStream printOut = new PrintStream(out);
+        String[] args = {"-e",  statement};
+        //hplsql 不一定使用默认连接conf.defaultConnection
+        Exec exec = new Exec(reuseConnection, printOut);
+        int responseCode = exec.run(args);
+
+        LOG.info("~~~~~out~~~~~:\n" + out.toString());
+        HplsqlResponse response = new HplsqlResponse(responseCode);
+        response.setResultBytes(out.toByteArray());
+        printOut.close();
+        return response;
     }
 
     /**
-     * 格式化sql语句，hplsql不识别语句中使用双引号引用字符串，需修改为使用单引号引用
+     * 检查sql语句，hplsql不识别语句中使用双引号引用字符串
      * @param statement
      * @return
      */
-    private String formatStatement(String statement){
+    private static void checkStatement(String statement)throws HplsqlException{
         if(statement == null || statement.trim().equals("")){
-            return "";
+            return;
         }
-        int doubleQuotesFirstIndex = statement.trim().indexOf("\"");
-        int singleQuotesFirstIndex = statement.trim().indexOf("'");
-        if(doubleQuotesFirstIndex == -1){ //如果不存在双引号则不处理
-            return statement;
+        if(!statement.contains("\"")){ //如果不存在双引号则检验通过
+            return;
         }
-        if(singleQuotesFirstIndex == -1){ //如果不存在单引号则将双引号变为单引号
-            return statement.trim().replaceAll("\"","'");
+        // 存在双引号 如双引号是在单引号引用里，则不报错；如双引号单独存在，则报错。
+        String stmWithoutSingleQuotesStr = statement.trim();
+        int singleQuotesBeginIndex = stmWithoutSingleQuotesStr.indexOf("'");
+        while( singleQuotesBeginIndex != -1){
+            int singleQuotesNextIndex = stmWithoutSingleQuotesStr.indexOf("'",singleQuotesBeginIndex + 1);
+            stmWithoutSingleQuotesStr = removeIndexStr(stmWithoutSingleQuotesStr, singleQuotesBeginIndex, singleQuotesNextIndex);
+            singleQuotesBeginIndex = stmWithoutSingleQuotesStr.indexOf("'");
         }
-        if(doubleQuotesFirstIndex < singleQuotesFirstIndex){
-            //如果都存在,且双引号在单引号的外部，则将双引号转换为单引号，单引号转换为双引号
-            //只处理了一层嵌套情况：如将"abc'de'ef" 转换为 'abc"de"ef'
-            int doubleQuotesLastIndex = statement.trim().lastIndexOf("\"");
-            String formatStmt = statement.trim().replaceAll("\'","\"");
-            formatStmt = replaceIndexChar(formatStmt,doubleQuotesFirstIndex, "\'");
-            formatStmt = replaceIndexChar(formatStmt,doubleQuotesLastIndex, "\'");
-            return formatStmt;
+        if(stmWithoutSingleQuotesStr.contains("\"")){
+            throw new HplsqlException("hplsql不支持使用双引号引用字符串");
         }
-        return statement;
+        return;
     }
 
     /**
-     * 替换指定位置的字符
-     * @param str 源字符串
-     * @param index 需要被替换的字符的位置
-     * @param replaceStr 替换的字符串
+     * 移除从beginIndex到endIndex之间的字符串，beginIndex和endIndex对应字符也会移除
+     * @param str
+     * @param beginIndex
+     * @param endIndex
      * @return
      */
-    private static String replaceIndexChar(String str, int index, String replaceStr){
-        return str.substring(0, index)+ replaceStr +str.substring(index + 1);
+    private static String removeIndexStr(String str, int beginIndex, int endIndex){
+        if(beginIndex < 0 && endIndex < 0 || beginIndex > endIndex && endIndex > 0){
+            return str;
+        }
+        if(beginIndex < 0){
+            return str.substring(0, endIndex) + str.substring(endIndex + 1);
+        }
+        if(endIndex < 0){
+            return str.substring(0, beginIndex) + str.substring(beginIndex + 1);
+        }
+        return str.substring(0, beginIndex) + str.substring(endIndex + 1);
     }
 
-    private int runHplCmd(String[] args) throws Exception {
-        //hplsql 不一定使用默认连接conf.defaultConnection
-        Exec exec = new Exec(reuseConnection);
-        return exec.run(args);
-    }
 
     //目前不会并发执行该方法，synchronized是保证只有一个线程使用connection对象
     public synchronized String getInfo(TGetInfoType type) throws HplsqlException {

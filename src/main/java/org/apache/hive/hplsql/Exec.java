@@ -18,18 +18,6 @@
 
 package org.apache.hive.hplsql;
 
-import java.math.BigDecimal;
-import java.io.ByteArrayInputStream;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.io.PrintWriter;
-import java.util.*;
-import java.util.Map.Entry;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -39,9 +27,15 @@ import org.antlr.v4.runtime.tree.ParseTree;
 import org.apache.commons.io.FileUtils;
 import org.apache.hive.hplsql.Var.Type;
 import org.apache.hive.hplsql.functions.*;
-import org.apache.hive.hplsql.service.session.HplsqlSessionImpl;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import java.io.*;
+import java.math.BigDecimal;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.util.*;
+import java.util.Map.Entry;
 
 /**
  * HPL/SQL script executor
@@ -112,6 +106,7 @@ public class Exec extends HplsqlBaseVisitor<Integer> {
   boolean offline = false;
   Connection reusedConnection = null;
   boolean serverMode = false;
+  public PrintStream output;
 
   Exec() {
     exec = this;
@@ -121,15 +116,11 @@ public class Exec extends HplsqlBaseVisitor<Integer> {
     this.exec = exec;
   }
 
-  Exec(Connection reusedConnection) {
+  Exec(Connection reusedConnection ,PrintStream out) {
     exec = this;
     this.reusedConnection = reusedConnection;
+    this.output = out;
     this.serverMode = true;
-  }
-
-  Exec(boolean serverMode) {
-    exec = this;
-    this.serverMode = serverMode;
   }
 
   /**
@@ -740,6 +731,7 @@ public class Exec extends HplsqlBaseVisitor<Integer> {
     Var result = run();
     if (result != null) {
       System.out.println(result.toString());
+      output.println(result.toString());
     }
     leaveScope();
     cleanup();
@@ -1010,6 +1002,7 @@ public class Exec extends HplsqlBaseVisitor<Integer> {
     Var prev = stackPop();
     if (prev != null && prev.value != null) {
       System.out.println(prev.toString());
+      output.println(prev.toString());
     }
     return visitChildren(ctx);
   }
@@ -1933,8 +1926,8 @@ public class Exec extends HplsqlBaseVisitor<Integer> {
       }
       if (!offline) {
         Process p = Runtime.getRuntime().exec(cmdarr);
-        new StreamGobbler(p.getInputStream()).start();
-        new StreamGobbler(p.getErrorStream()).start();
+        new StreamGobbler(p.getInputStream(), exec.output).start();
+        new StreamGobbler(p.getErrorStream(), exec.output).start();
         int rc = p.waitFor();
         if (trace) {
           trace(ctx, "HIVE Process exit code: " + rc);
@@ -2400,9 +2393,11 @@ public class Exec extends HplsqlBaseVisitor<Integer> {
 	  }
 		if (ctx != null) {
 	    System.out.println("Ln:" + ctx.getStart().getLine() + " " + message);
+	    output.println("Ln:" + ctx.getStart().getLine() + " " + message);
 		}
 		else {
 		  System.out.println(message);
+          output.println(message);
 		}
   }
 
@@ -2468,5 +2463,4 @@ public class Exec extends HplsqlBaseVisitor<Integer> {
     return exec.offline;
   }
 
-  public Conn getConn() { return conn; }
 }

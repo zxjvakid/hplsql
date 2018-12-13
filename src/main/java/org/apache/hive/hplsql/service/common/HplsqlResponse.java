@@ -1,10 +1,9 @@
 package org.apache.hive.hplsql.service.common;
 
-import java.util.List;
-
 public class HplsqlResponse {
     private final int responseCode;
-    private List<String> outputStrings;
+    private byte[] resultBytes;
+
     public HplsqlResponse(int responseCode) {
         this.responseCode = responseCode;
     }
@@ -13,11 +12,11 @@ public class HplsqlResponse {
         return responseCode;
     }
 
-    public List<String> getOutputStrings() {
-        return outputStrings;
+    public byte[] getResultBytes() {
+        return resultBytes;
     }
 
-    public void setOutputStrings(List<String> outputStrings) {
-        this.outputStrings = outputStrings;
+    public void setResultBytes(byte[] resultBytes) {
+        this.resultBytes = resultBytes;
     }
 }

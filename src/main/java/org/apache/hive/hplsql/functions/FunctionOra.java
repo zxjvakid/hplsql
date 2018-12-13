@@ -18,10 +18,13 @@
 
 package org.apache.hive.hplsql.functions;
 
-import java.io.IOException;
-import java.io.EOFException;
+import org.apache.hive.hplsql.Exec;
+import org.apache.hive.hplsql.File;
+import org.apache.hive.hplsql.HplsqlParser;
+import org.apache.hive.hplsql.Var;
 
-import org.apache.hive.hplsql.*;
+import java.io.EOFException;
+import java.io.IOException;
 
 public class FunctionOra extends Function {
   public FunctionOra(Exec e) {
@@ -53,6 +56,7 @@ public class FunctionOra extends Function {
   void dbmsOutputPutLine(HplsqlParser.Expr_func_paramsContext ctx) {
     if (ctx.func_param().size() > 0) {
       System.out.println(evalPop(ctx.func_param(0).expr()));
+      exec.output.println(evalPop(ctx.func_param(0).expr()));
     }
   }
   

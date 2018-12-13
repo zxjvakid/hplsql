@@ -10,6 +10,7 @@ import org.apache.hive.hplsql.service.session.HplsqlSession;
 import org.apache.hive.hplsql.service.session.SessionHandle;
 import org.apache.hive.hplsql.service.session.SessionManager;
 import org.apache.hive.service.cli.FetchOrientation;
+import org.apache.hive.service.cli.FetchType;
 import org.apache.hive.service.cli.RowSet;
 import org.apache.hive.service.cli.TableSchema;
 import org.apache.hive.service.rpc.thrift.TGetInfoType;
@@ -120,9 +121,9 @@ public class CLIService {
     }
 
     public RowSet fetchResults(OperationHandle opHandle, FetchOrientation orientation,
-                               long maxRows) throws HplsqlException {
+                               long maxRows, FetchType fetchType) throws HplsqlException {
         RowSet rowSet = sessionManager.getOperationManager().getOperation(opHandle)
-                .getParentSession().fetchResults(opHandle, orientation, maxRows);
+                .getParentSession().fetchResults(opHandle, orientation, maxRows, fetchType);
         LOG.debug(opHandle + ": fetchResults()");
         return rowSet;
     }

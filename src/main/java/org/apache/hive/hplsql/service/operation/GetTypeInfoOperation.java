@@ -3,6 +3,8 @@ package org.apache.hive.hplsql.service.operation;
 import org.apache.hive.hplsql.Executor;
 import org.apache.hive.hplsql.service.common.exception.HplsqlException;
 import org.apache.hive.hplsql.service.session.HplsqlSession;
+import org.apache.hive.service.cli.FetchOrientation;
+import org.apache.hive.service.cli.RowSet;
 import org.apache.hive.service.cli.TableSchema;
 
 import java.sql.ResultSet;
@@ -29,6 +31,11 @@ public class GetTypeInfoOperation extends Operation {
 
     @Override
     public TableSchema getResultSetSchema() throws HplsqlException {
+        return null;
+    }
+
+    @Override
+    public RowSet getNextRowSet(FetchOrientation orientation, long maxRows) throws HplsqlException {
         return null;
     }
 

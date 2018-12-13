@@ -122,18 +122,24 @@ public class Select {
         for(int i=1;i<=cols;i++){
           if (i > 1) {
             System.out.print("\t");
+            exec.output.print("\t");
           }
           System.out.print(rm.getColumnName(i));
+          exec.output.print(rm.getColumnName(i));
         }
         System.out.println("");
+        exec.output.println("");
         while (rs.next()) {
           for (int i = 1; i <= cols; i++) {
             if (i > 1) {
               System.out.print("\t");
+              exec.output.print("\t");
             }
             System.out.print(rs.getString(i));
+            exec.output.print(rs.getString(i));
           }
           System.out.println("");
+          exec.output.println("");
           exec.incRowCount();
         }
       }

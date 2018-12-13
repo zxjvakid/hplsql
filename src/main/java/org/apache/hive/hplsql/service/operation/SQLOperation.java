@@ -2,11 +2,16 @@ package org.apache.hive.hplsql.service.operation;
 
 import org.apache.hive.hplsql.Executor;
 import org.apache.hive.hplsql.service.common.HplsqlResponse;
-import org.apache.hive.hplsql.service.common.OperationOutPut;
 import org.apache.hive.hplsql.service.common.exception.HplsqlException;
 import org.apache.hive.hplsql.service.session.HplsqlSession;
+import org.apache.hive.service.cli.FetchOrientation;
+import org.apache.hive.service.cli.RowSet;
+import org.apache.hive.service.cli.RowSetFactory;
 import org.apache.hive.service.cli.TableSchema;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
@@ -59,11 +64,11 @@ public class SQLOperation extends ExecuteStatementOperation {
                         + ", perhaps cancelled due to query timeout or by another thread.");
                 return;
             }
-            // TODO 调用hplsql执行返回结果
+
             LOG.info(executor + " start execute " + statement);
             response = executor.runHpl(statement);
             LOG.info(executor + " execute {} finished", statement);
-            operationOutPut = new OperationOutPut(response.getOutputStrings());
+            operationResult = new OperationResult(response.getResultBytes());
             if (0 != response.getResponseCode()) {
                 throw new HplsqlException("Error while processing statement");
             }
@@ -97,6 +102,42 @@ public class SQLOperation extends ExecuteStatementOperation {
         return resultSchema;
     }
 
+    @Override
+    public RowSet getNextRowSet(FetchOrientation orientation, long maxRows) throws HplsqlException {
+        assertState(new ArrayList<>(Arrays.asList(OperationState.FINISHED)));
+        TableSchema tableSchema = getTableSchema();
+        RowSet rowSet = RowSetFactory.create(tableSchema, getProtocolVersion(),false);
+
+        // get the OperationResult object from the operation
+        OperationResult operationResult = getOperationResult();
+        if (operationResult == null) {
+            throw new HplsqlException("Couldn't find operation result: " + getHandle());
+        }
+        // read execute output Strings;
+        List<String> resultStrings  = operationResult.read(isFetchFirst(orientation), maxRows);
+
+        // convert logs to RowSet
+        for (String resultString : resultStrings) {
+            rowSet.addRow(new String[] { resultString });
+        }
+        return rowSet;
+    }
+
+
+    private TableSchema getTableSchema() {
+        TableSchema schema = new TableSchema();
+        schema.addStringColumn("string","hpl execute result");
+        return schema;
+    }
+
+    private boolean isFetchFirst(FetchOrientation fetchOrientation) {
+        //TODO: Since OperationLog is moved to package o.a.h.h.ql.session,
+        // we may add a Enum there and map FetchOrientation to it.
+        if (fetchOrientation.equals(FetchOrientation.FETCH_FIRST)) {
+            return true;
+        }
+        return false;
+    }
     @Override
     public void cancel() throws HplsqlException {
         OperationState opState = getStatus().getState();

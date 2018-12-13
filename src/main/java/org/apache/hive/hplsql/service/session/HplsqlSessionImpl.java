@@ -8,6 +8,7 @@ import org.apache.hive.hplsql.service.operation.GetTypeInfoOperation;
 import org.apache.hive.hplsql.service.operation.OperationHandle;
 import org.apache.hive.hplsql.service.operation.OperationManager;
 import org.apache.hive.service.cli.FetchOrientation;
+import org.apache.hive.service.cli.FetchType;
 import org.apache.hive.service.cli.RowSet;
 import org.apache.hive.service.cli.TableSchema;
 import org.apache.hive.service.rpc.thrift.TGetInfoType;
@@ -151,12 +152,12 @@ public class HplsqlSessionImpl implements HplsqlSession {
 
     @Override
     public RowSet fetchResults(OperationHandle opHandle, FetchOrientation orientation,
-                               long maxRows) throws HplsqlException {
-
-//        if (fetchType == FetchType.QUERY_OUTPUT) {
-//            return operationManager.getOperationNextRowSet(opHandle, orientation, maxRows);
-//        }
-        return operationManager.getOperationOutputRowSet(opHandle, orientation, maxRows);
+                               long maxRows, FetchType fetchType) throws HplsqlException {
+        if (fetchType == FetchType.QUERY_OUTPUT) {
+            return operationManager.getOperationNextRowSet(opHandle, orientation, maxRows);
+        }
+        //TODO 其他类型的结果集
+        return null;
     }
 
     @Override

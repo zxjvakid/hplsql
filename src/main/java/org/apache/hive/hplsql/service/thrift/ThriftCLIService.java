@@ -6,10 +6,7 @@ import org.apache.hive.hplsql.service.common.exception.HplsqlException;
 import org.apache.hive.hplsql.service.operation.OperationHandle;
 import org.apache.hive.hplsql.service.operation.OperationStatus;
 import org.apache.hive.hplsql.service.session.SessionHandle;
-import org.apache.hive.service.cli.FetchOrientation;
-import org.apache.hive.service.cli.HiveSQLException;
-import org.apache.hive.service.cli.RowSet;
-import org.apache.hive.service.cli.TableSchema;
+import org.apache.hive.service.cli.*;
 import org.apache.hive.service.rpc.thrift.*;
 import org.apache.thrift.TException;
 import org.slf4j.Logger;
@@ -435,7 +432,7 @@ public abstract class ThriftCLIService implements TCLIService.Iface, Runnable {
             RowSet rowSet = cliService.fetchResults(
                     new OperationHandle(req.getOperationHandle()),
                     FetchOrientation.getFetchOrientation(req.getOrientation()),
-                    req.getMaxRows());
+                    req.getMaxRows(),FetchType.getFetchType(req.getFetchType()));
             resp.setResults(rowSet.toTRowSet());
             resp.setHasMoreRows(false);
             resp.setStatus(OK_STATUS);

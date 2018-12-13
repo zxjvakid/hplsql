@@ -18,13 +18,13 @@
 
 package org.apache.hive.hplsql.functions;
 
+import org.apache.hive.hplsql.*;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.apache.hive.hplsql.*;
 
 public class FunctionMisc extends Function {
   public FunctionMisc(Exec e) {
@@ -302,6 +302,7 @@ public class FunctionMisc extends Function {
     else {
       for (Map.Entry<String, Integer> i : group.entrySet()) {
         System.out.println(i.getKey() + '\t' + i.getValue());
+        exec.output.println(i.getKey() + '\t' + i.getValue());
       }
     }
     exec.closeQuery(query, exec.conf.defaultConnection);

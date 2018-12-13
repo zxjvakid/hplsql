@@ -6,6 +6,7 @@ import org.apache.hive.hplsql.service.common.exception.HplsqlException;
 import org.apache.hive.hplsql.service.operation.OperationHandle;
 import org.apache.hive.hplsql.service.operation.OperationManager;
 import org.apache.hive.service.cli.FetchOrientation;
+import org.apache.hive.service.cli.FetchType;
 import org.apache.hive.service.cli.RowSet;
 import org.apache.hive.service.cli.TableSchema;
 import org.apache.hive.service.rpc.thrift.TGetInfoType;
@@ -31,7 +32,7 @@ public interface HplsqlSession {
             throws HplsqlException;
 
     RowSet fetchResults(OperationHandle opHandle, FetchOrientation orientation,
-                        long maxRows) throws HplsqlException;
+                        long maxRows, FetchType fetchType) throws HplsqlException;
 
     Executor getExcutor();
 
