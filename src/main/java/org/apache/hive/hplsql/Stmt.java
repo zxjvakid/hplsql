@@ -322,13 +322,13 @@ public class Stmt {
           for (int i = 1; i <= cols; i++) {
             if (i > 1) {
               System.out.print("\t");
-              exec.output.print("\t");
+              exec.outputPrint("\t");
             }
             System.out.print(rs.getString(i));
-            exec.output.print(rs.getString(i));
+            exec.outputPrint(rs.getString(i));
           }
           System.out.println("");
-          exec.output.println("");
+          exec.outputPrintln("");
         }
       }
     }    
@@ -1006,13 +1006,13 @@ public class Stmt {
             for(int i = 1; i <= cols; i++) {
               if(i > 1) {
                 System.out.print("\t");
-                exec.output.print("\t");
+                exec.outputPrint("\t");
               }
               System.out.print(rs.getString(i));
-              exec.output.print(rs.getString(i));
+              exec.outputPrint(rs.getString(i));
             }
             System.out.println("");
-            exec.output.println("");
+            exec.outputPrintln("");
           }
         }
       } 
@@ -1152,7 +1152,7 @@ public class Stmt {
     trace(ctx, "PRINT");
     if (ctx.expr() != null) {
       System.out.println(evalPop(ctx.expr()).toString());
-      exec.output.println(evalPop(ctx.expr()).toString());
+      exec.outputPrintln(evalPop(ctx.expr()).toString());
     }
 	  return 0; 
   }

@@ -731,7 +731,7 @@ public class Exec extends HplsqlBaseVisitor<Integer> {
     Var result = run();
     if (result != null) {
       System.out.println(result.toString());
-      output.println(result.toString());
+      outputPrintln(result.toString());
     }
     leaveScope();
     cleanup();
@@ -1002,7 +1002,7 @@ public class Exec extends HplsqlBaseVisitor<Integer> {
     Var prev = stackPop();
     if (prev != null && prev.value != null) {
       System.out.println(prev.toString());
-      output.println(prev.toString());
+      outputPrintln(prev.toString());
     }
     return visitChildren(ctx);
   }
@@ -1926,8 +1926,8 @@ public class Exec extends HplsqlBaseVisitor<Integer> {
       }
       if (!offline) {
         Process p = Runtime.getRuntime().exec(cmdarr);
-        new StreamGobbler(p.getInputStream(), exec.output).start();
-        new StreamGobbler(p.getErrorStream(), exec.output).start();
+        new StreamGobbler(p.getInputStream(), exec).start();
+        new StreamGobbler(p.getErrorStream(), exec).start();
         int rc = p.waitFor();
         if (trace) {
           trace(ctx, "HIVE Process exit code: " + rc);
@@ -2393,11 +2393,11 @@ public class Exec extends HplsqlBaseVisitor<Integer> {
 	  }
 		if (ctx != null) {
 	    System.out.println("Ln:" + ctx.getStart().getLine() + " " + message);
-	    output.println("Ln:" + ctx.getStart().getLine() + " " + message);
+	    outputPrintln("Ln:" + ctx.getStart().getLine() + " " + message);
 		}
 		else {
 		  System.out.println(message);
-          output.println(message);
+          outputPrintln(message);
 		}
   }
 
@@ -2463,4 +2463,15 @@ public class Exec extends HplsqlBaseVisitor<Integer> {
     return exec.offline;
   }
 
+  public void outputPrint(String msg){
+    if(output != null){
+      output.print(msg);
+    }
+  }
+
+  public void outputPrintln(String msg){
+    if(output != null){
+      output.println(msg);
+    }
+  }
 }

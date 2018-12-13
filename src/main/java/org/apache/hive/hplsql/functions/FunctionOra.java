@@ -56,7 +56,7 @@ public class FunctionOra extends Function {
   void dbmsOutputPutLine(HplsqlParser.Expr_func_paramsContext ctx) {
     if (ctx.func_param().size() > 0) {
       System.out.println(evalPop(ctx.func_param(0).expr()));
-      exec.output.println(evalPop(ctx.func_param(0).expr()));
+      exec.outputPrintln(evalPop(ctx.func_param(0).expr()).toString());
     }
   }
   

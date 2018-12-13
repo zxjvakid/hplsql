@@ -18,22 +18,25 @@
 
 package org.apache.hive.hplsql;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 /**
  * Read a stream from an external process 
  */
 public class StreamGobbler extends Thread {
   InputStream is;
-  PrintStream output;
+  Exec exec;
   
   StreamGobbler(InputStream is) {
     this.is = is;
   }
 
-  StreamGobbler(InputStream is, PrintStream output) {
+  StreamGobbler(InputStream is, Exec exec) {
     this.is = is;
-    this.output = output;
+    this.exec = exec;
   }
 
   public void run() {
@@ -46,7 +49,7 @@ public class StreamGobbler extends Thread {
           break;
         }        
         System.out.println(line);
-        output.println(line);
+        exec.outputPrintln(line);
       }
     } catch (IOException ioe) {
       ioe.printStackTrace();  
