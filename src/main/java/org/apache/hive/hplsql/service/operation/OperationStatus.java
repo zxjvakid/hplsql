@@ -10,15 +10,13 @@ import org.apache.hive.hplsql.service.common.exception.HplsqlException;
 public class OperationStatus {
 
   private final OperationState state;
-  private final String taskStatus;
   private final long operationStarted;
   private final long operationCompleted;
   private final boolean hasResultSet;
   private final HplsqlException operationException;
 
-  public OperationStatus(OperationState state, String taskStatus, long operationStarted, long operationCompleted, boolean hasResultSet, HplsqlException operationException) {
+  public OperationStatus(OperationState state, long operationStarted, long operationCompleted, boolean hasResultSet, HplsqlException operationException) {
     this.state = state;
-    this.taskStatus = taskStatus;
     this.operationStarted = operationStarted;
     this.operationCompleted = operationCompleted;
     this.hasResultSet = hasResultSet;
@@ -27,10 +25,6 @@ public class OperationStatus {
 
   public OperationState getState() {
     return state;
-  }
-
-  public String getTaskStatus() {
-    return taskStatus;
   }
 
   public long getOperationStarted() {

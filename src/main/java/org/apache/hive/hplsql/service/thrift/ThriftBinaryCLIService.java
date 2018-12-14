@@ -1,6 +1,5 @@
 package org.apache.hive.hplsql.service.thrift;
 
-import org.apache.hive.hplsql.service.auth.TSetIpAddressProcessor;
 import org.apache.hive.hplsql.service.CLIService;
 import org.apache.hive.service.rpc.thrift.TCLIService;
 import org.apache.thrift.protocol.TBinaryProtocol;

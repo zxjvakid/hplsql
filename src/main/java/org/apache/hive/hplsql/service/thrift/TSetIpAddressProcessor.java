@@ -1,4 +1,4 @@
-package org.apache.hive.hplsql.service.auth;
+package org.apache.hive.hplsql.service.thrift;
 
 import org.apache.hive.service.rpc.thrift.TCLIService;
 import org.apache.thrift.TException;
@@ -13,19 +13,9 @@ import org.slf4j.LoggerFactory;
 public class TSetIpAddressProcessor <I extends TCLIService.Iface> extends TCLIService.Processor<TCLIService.Iface>{
     private static final Logger LOGGER = LoggerFactory.getLogger(TSetIpAddressProcessor.class.getName());
 
-    private static final ThreadLocal<String> THREAD_LOCAL_IP_ADDRESS = new ThreadLocal<String>() {
-        @Override
-        protected String initialValue() {
-            return null;
-        }
-    };
+    private static final ThreadLocal<String> THREAD_LOCAL_IP_ADDRESS = new ThreadLocal<>();
 
-    private static final ThreadLocal<String> THREAD_LOCAL_USER_NAME = new ThreadLocal<String>() {
-        @Override
-        protected String initialValue() {
-            return null;
-        }
-    };
+    private static final ThreadLocal<String> THREAD_LOCAL_USER_NAME = new ThreadLocal<>();
 
     public TSetIpAddressProcessor(TCLIService.Iface iface) {
         super(iface);
@@ -75,8 +65,6 @@ public class TSetIpAddressProcessor <I extends TCLIService.Iface> extends TCLISe
         }
         return null;
     }
-
-
 
     public static String getUserIpAddress() {
         return THREAD_LOCAL_IP_ADDRESS.get();

@@ -1,6 +1,7 @@
 package org.apache.hive.hplsql.service.operation;
 
 import org.apache.hive.hplsql.service.common.exception.HplsqlException;
+import org.apache.hive.hplsql.service.common.handle.OperationHandle;
 import org.apache.hive.hplsql.service.session.HplsqlSession;
 import org.apache.hive.service.cli.FetchOrientation;
 import org.apache.hive.service.cli.RowSet;
@@ -21,15 +22,14 @@ public class OperationManager {
     private ExecutorService backgroundOperationPool = Executors.newFixedThreadPool(5);
 
     public ExecuteStatementOperation newExecuteStatementOperation(HplsqlSession parentSession,
-                                                                  String statement, Map<String, String> confOverlay, boolean runAsync)
-            throws HplsqlException {
+                                                                  String statement, Map<String, String> confOverlay, boolean runAsync) {
         ExecuteStatementOperation operation =
-                ExecuteStatementOperation.newExecuteStatementOperation(parentSession, statement, confOverlay, runAsync);
+                new ExecuteStatementOperation(parentSession, statement, confOverlay, runAsync);
         addOperation(operation);
         return operation;
     }
 
-    public GetTypeInfoOperation newDatabaseMetaDataOperation(HplsqlSession parentSession) {
+    public GetTypeInfoOperation newGetTypeInfoOperation(HplsqlSession parentSession) {
         GetTypeInfoOperation operation = new GetTypeInfoOperation(parentSession);
         addOperation(operation);
         return operation;
@@ -58,11 +58,9 @@ public class OperationManager {
         return getOperation(opHandle).getNextRowSet(orientation, maxRows);
     }
 
-
     public Future<?> submitBackgroundOperation(Runnable r) {
         return backgroundOperationPool.submit(r);
     }
-
 
     public void closeOperation(OperationHandle opHandle) throws HplsqlException {
         LOG.info("Closing operation: " + opHandle);

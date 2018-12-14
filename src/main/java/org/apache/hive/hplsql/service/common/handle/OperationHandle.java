@@ -1,6 +1,6 @@
-package org.apache.hive.hplsql.service.operation;
+package org.apache.hive.hplsql.service.common.handle;
 
-import org.apache.hive.hplsql.service.common.Handle;
+import org.apache.hive.hplsql.service.operation.OperationType;
 import org.apache.hive.service.rpc.thrift.TOperationHandle;
 import org.apache.hive.service.rpc.thrift.TProtocolVersion;
 
@@ -15,7 +15,6 @@ public class OperationHandle extends Handle {
         this.protocol = protocol;
     }
 
-    // dummy handle for ThriftCLIService
     public OperationHandle(TOperationHandle tOperationHandle) {
         this(tOperationHandle, TProtocolVersion.HIVE_CLI_SERVICE_PROTOCOL_V1);
     }

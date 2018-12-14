@@ -1,11 +1,7 @@
-package org.apache.hive.hplsql.service.session;
+package org.apache.hive.hplsql.service.common.handle;
 
-import org.apache.hive.hplsql.service.common.Handle;
-import org.apache.hive.hplsql.service.common.HandleIdentifier;
 import org.apache.hive.service.rpc.thrift.TProtocolVersion;
 import org.apache.hive.service.rpc.thrift.TSessionHandle;
-
-import java.util.UUID;
 
 public class SessionHandle extends Handle {
 
@@ -15,7 +11,6 @@ public class SessionHandle extends Handle {
         this.protocol = protocol;
     }
 
-    // dummy handle for ThriftCLIService
     public SessionHandle(TSessionHandle tSessionHandle) {
         this(tSessionHandle, TProtocolVersion.HIVE_CLI_SERVICE_PROTOCOL_V1);
     }
@@ -23,13 +18,6 @@ public class SessionHandle extends Handle {
     public SessionHandle(TSessionHandle tSessionHandle, TProtocolVersion protocol) {
         super(tSessionHandle.getSessionId());
         this.protocol = protocol;
-    }
-    public SessionHandle(HandleIdentifier handleId, TProtocolVersion protocol) {
-        super(handleId);
-        this.protocol = protocol;
-    }
-    public UUID getSessionId() {
-        return getHandleIdentifier().getPublicId();
     }
 
     public TSessionHandle toTSessionHandle() {

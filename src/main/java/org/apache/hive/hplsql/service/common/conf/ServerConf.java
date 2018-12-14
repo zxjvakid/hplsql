@@ -60,6 +60,11 @@ public class ServerConf{
         }
     }
 
+    /**
+     * 获取连接的初始化sql语句
+     * @param name 连接名称
+     * @param connInit 初始化sql语句
+     */
     public void setConnectionInit(String name, String connInit) {
         ArrayList<String> a = new ArrayList<>();
         String[] sa = connInit.split(";");
@@ -73,7 +78,7 @@ public class ServerConf{
     }
 
     public String getConnStrByName(String connName){
-       return connStrs.get(connName);
+        return connStrs.get(connName);
     }
 
     public String getDefaultConn(){

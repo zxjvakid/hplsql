@@ -3,9 +3,10 @@ package org.apache.hive.hplsql.service.session;
 import org.apache.hive.hplsql.Executor;
 import org.apache.hive.hplsql.service.common.conf.ServerConf;
 import org.apache.hive.hplsql.service.common.exception.HplsqlException;
+import org.apache.hive.hplsql.service.common.handle.OperationHandle;
+import org.apache.hive.hplsql.service.common.handle.SessionHandle;
 import org.apache.hive.hplsql.service.operation.ExecuteStatementOperation;
 import org.apache.hive.hplsql.service.operation.GetTypeInfoOperation;
-import org.apache.hive.hplsql.service.operation.OperationHandle;
 import org.apache.hive.hplsql.service.operation.OperationManager;
 import org.apache.hive.service.cli.FetchOrientation;
 import org.apache.hive.service.cli.FetchType;
@@ -17,53 +18,37 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.*;
-import java.util.concurrent.Semaphore;
 
 public class HplsqlSessionImpl implements HplsqlSession {
     private static final Logger LOG = LoggerFactory.getLogger(HplsqlSessionImpl.class);
-    // Shared between threads (including SessionState!)
     private final SessionHandle sessionHandle;
     private String username;
     private final String password;
-    private final long creationTime;
-    private Executor executor;
     private String ipAddress;
-
     private SessionManager sessionManager;
     private OperationManager operationManager;
+
+    private Executor executor;
     // Synchronized by locking on itself. 目前同一个session对象不会被多个线程同时使用。
     private final Set<OperationHandle> opHandleSet = new HashSet<>();
 
+    private final long creationTime;
     private volatile long lastAccessTime = System.currentTimeMillis();
-    private final Semaphore operationLock;
 
     public HplsqlSessionImpl(SessionHandle sessionHandle, TProtocolVersion protocol,
                              String username, String password, String ipAddress) {
         this.username = username;
         this.password = password;
+        this.ipAddress = ipAddress;
         creationTime = System.currentTimeMillis();
         this.sessionHandle = sessionHandle != null ? sessionHandle : new SessionHandle(protocol);
-        this.ipAddress = ipAddress;
-        this.operationLock = new Semaphore(1);
     }
 
-
-    /**
-     * Opens a new HplsqlServer session for the client connection.
-     * Creates a new SessionState object that will be associated with this HplsqlServer session.
-     * When the server executes multiple queries in the same session,
-     * this SessionState object is reused across multiple queries.
-     * Note that if doAs is true, this call goes through a proxy object,
-     * which wraps the method logic in a UserGroupInformation#doAs.
-     * That's why it is important to create SessionState here rather than in the constructor.
-     */
     @Override
     public void open(ServerConf serverConf) throws Exception {
-        //sessionState = new SessionState();
-        //sessionState.setUserIpAddress(ipAddress);
-        lastAccessTime = System.currentTimeMillis();
         executor = new Executor(serverConf);
         executor.init();
+        lastAccessTime = System.currentTimeMillis();
     }
 
     @Override
@@ -77,26 +62,35 @@ public class HplsqlSessionImpl implements HplsqlSession {
             operationManager.closeOperation(opHandle);
         }
         executor.close();
+        lastAccessTime = System.currentTimeMillis();
     }
 
     @Override
     public String getInfo(TGetInfoType infoType) throws HplsqlException {
-        return executor.getInfo(infoType);
+        String info = executor.getInfo(infoType);
+        lastAccessTime = System.currentTimeMillis();
+        return info;
     }
 
     @Override
     public OperationHandle executeStatement(String statement, Map<String, String> confOverlay) throws HplsqlException {
-        return executeStatementInternal(statement, confOverlay, false);
+        OperationHandle operationHandle = executeStatementInternal(statement, confOverlay, false);
+        lastAccessTime = System.currentTimeMillis();
+        return operationHandle;
     }
 
     @Override
     public OperationHandle executeStatementAsync(String statement, Map<String, String> confOverlay) throws HplsqlException {
-        return executeStatementInternal(statement, confOverlay, true);
+        OperationHandle operationHandle = executeStatementInternal(statement, confOverlay, true);
+        lastAccessTime = System.currentTimeMillis();
+        return operationHandle;
     }
 
     @Override
     public TableSchema getResultSetMetadata(OperationHandle opHandle) throws HplsqlException {
-        return sessionManager.getOperationManager().getOperationResultSetSchema(opHandle);
+        TableSchema tableSchema = sessionManager.getOperationManager().getOperationResultSetSchema(opHandle);
+        lastAccessTime = System.currentTimeMillis();
+        return tableSchema;
     }
 
     private OperationHandle executeStatementInternal(String statement,
@@ -111,9 +105,6 @@ public class HplsqlSessionImpl implements HplsqlSession {
             operation.run();
             return opHandle;
         } catch (HplsqlException e) {
-            // Refering to SQLOperation.java, there is no chance that a HplsqlException throws and the
-            // async background operation submits to thread pool successfully at the same time. So, Cleanup
-            // opHandle directly when got HplsqlException
             if (opHandle != null) {
                 removeOpHandle(opHandle);
                 getOperationManager().closeOperation(opHandle);
@@ -131,11 +122,12 @@ public class HplsqlSessionImpl implements HplsqlSession {
     @Override
     public OperationHandle getTypeInfo() throws HplsqlException {
         OperationManager operationManager = getOperationManager();
-        GetTypeInfoOperation operation = operationManager.newDatabaseMetaDataOperation(getSession());
+        GetTypeInfoOperation operation = operationManager.newGetTypeInfoOperation(getSession());
         OperationHandle opHandle = operation.getHandle();
         try {
             addOpHandle(opHandle);
             operation.run();
+            lastAccessTime = System.currentTimeMillis();
             return opHandle;
         } catch (HplsqlException e) {
             removeOpHandle(opHandle);
@@ -153,11 +145,15 @@ public class HplsqlSessionImpl implements HplsqlSession {
     @Override
     public RowSet fetchResults(OperationHandle opHandle, FetchOrientation orientation,
                                long maxRows, FetchType fetchType) throws HplsqlException {
+        RowSet rowSet;
         if (fetchType == FetchType.QUERY_OUTPUT) {
-            return operationManager.getOperationNextRowSet(opHandle, orientation, maxRows);
+            rowSet = operationManager.getOperationNextRowSet(opHandle, orientation, maxRows);
+        }else{
+            //TODO 其他类型的结果集
+            rowSet = null;
         }
-        //TODO 其他类型的结果集
-        return null;
+        lastAccessTime = System.currentTimeMillis();
+        return rowSet;
     }
 
     @Override
@@ -166,11 +162,13 @@ public class HplsqlSessionImpl implements HplsqlSession {
         synchronized (opHandleSet) {
             opHandleSet.remove(operationHandle);
         }
+        lastAccessTime = System.currentTimeMillis();
     }
 
     @Override
     public void cancelOperation(OperationHandle operationHandle) throws HplsqlException{
         operationManager.cancelOperation(operationHandle);
+        lastAccessTime = System.currentTimeMillis();
     }
 
     @Override

@@ -1,6 +1,7 @@
 package org.apache.hive.hplsql.service.session;
 import org.apache.hive.hplsql.service.common.conf.ServerConf;
 import org.apache.hive.hplsql.service.common.exception.HplsqlException;
+import org.apache.hive.hplsql.service.common.handle.SessionHandle;
 import org.apache.hive.hplsql.service.operation.OperationManager;
 import org.apache.hive.service.rpc.thrift.TProtocolVersion;
 import org.slf4j.Logger;
@@ -55,7 +56,6 @@ public class SessionManager {
             } catch (Throwable t) {
                 LOG.warn("Error closing session", t);
             }
-            session = null;
             throw new HplsqlException("Failed to open new session: " + e.getMessage(), e);
         }
         handleToSession.put(session.getSessionHandle(), session);

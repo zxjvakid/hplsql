@@ -23,9 +23,8 @@ public class GetTypeInfoOperation extends Operation {
         this.executor = parentSession.getExcutor();
     }
 
-
     @Override
-    protected void runInternal() throws HplsqlException {
+    public void run() throws HplsqlException {
         result = executor.getTypeInfo();
     }
 

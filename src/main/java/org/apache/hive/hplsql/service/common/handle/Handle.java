@@ -1,4 +1,4 @@
-package org.apache.hive.hplsql.service.common;
+package org.apache.hive.hplsql.service.common.handle;
 
 import org.apache.hive.service.rpc.thrift.THandleIdentifier;
 

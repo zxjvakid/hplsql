@@ -47,7 +47,7 @@ public class OperationResult {
             reader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(resultBytes)));
         }
         String line;
-        // if nLines <= 0, read all lines.
+        // 如果 nLines <= 0, 读取所有行
         for (int i = 0; i < nLines || nLines <= 0; i++) {
             try {
                 line = reader.readLine();

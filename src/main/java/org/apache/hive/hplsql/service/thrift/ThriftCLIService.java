@@ -1,18 +1,16 @@
 package org.apache.hive.hplsql.service.thrift;
 
 import org.apache.hive.hplsql.service.CLIService;
-import org.apache.hive.hplsql.service.auth.TSetIpAddressProcessor;
 import org.apache.hive.hplsql.service.common.exception.HplsqlException;
-import org.apache.hive.hplsql.service.operation.OperationHandle;
+import org.apache.hive.hplsql.service.common.handle.OperationHandle;
+import org.apache.hive.hplsql.service.common.handle.SessionHandle;
 import org.apache.hive.hplsql.service.operation.OperationStatus;
-import org.apache.hive.hplsql.service.session.SessionHandle;
 import org.apache.hive.service.cli.*;
 import org.apache.hive.service.rpc.thrift.*;
 import org.apache.thrift.TException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
 import java.util.Map;
 
 public abstract class ThriftCLIService implements TCLIService.Iface, Runnable {
@@ -46,7 +44,7 @@ public abstract class ThriftCLIService implements TCLIService.Iface, Runnable {
         return resp;
     }
 
-    SessionHandle getSessionHandle(TOpenSessionReq req, TOpenSessionResp res) throws HplsqlException, IOException {
+    SessionHandle getSessionHandle(TOpenSessionReq req, TOpenSessionResp res) throws HplsqlException {
         String userName = getUserName(req);
         String ipAddress = getIpAddress();
         TProtocolVersion protocol = getMinVersion(CLIService.SERVER_VERSION,
@@ -62,10 +60,8 @@ public abstract class ThriftCLIService implements TCLIService.Iface, Runnable {
      *
      * @param req
      * @return
-     * @throws HplsqlException
-     * @throws IOException
      */
-    private String getUserName(TOpenSessionReq req) throws HplsqlException, IOException {
+    private String getUserName(TOpenSessionReq req){
         String userName = null;
         // NOSASL
         if (userName == null) {
@@ -155,22 +151,16 @@ public abstract class ThriftCLIService implements TCLIService.Iface, Runnable {
         TExecuteStatementResp resp = new TExecuteStatementResp();
         try {
             SessionHandle sessionHandle = new SessionHandle(req.getSessionHandle());
-            //LOG.debug("ReqSessionHandle:"+req.getSessionHandle());
             String statement = req.getStatement();
             LOG.debug("ReqStatement:" + req.getStatement());
             Map<String, String> confOverlay = req.getConfOverlay();
             Boolean runAsync = req.isRunAsync();
-            //LOG.debug("ReqRunAsync:"+req.isRunAsync());
-            long queryTimeout = req.getQueryTimeout();
             OperationHandle operationHandle =
                     runAsync ? cliService.executeStatementAsync(sessionHandle, statement, confOverlay)
                             : cliService.executeStatement(sessionHandle, statement, confOverlay);
             resp.setOperationHandle(operationHandle.toTOperationHandle());
             resp.setStatus(OK_STATUS);
         } catch (Exception e) {
-            // Note: it's rather important that this (and other methods) catch Exception, not Throwable;
-            // in combination with HiveSessionProxy.invoke code, perhaps unintentionally, it used
-            // to also catch all errors; and now it allows OOMs only to propagate.
             LOG.warn("Error executing statement: ", e);
             resp.setStatus(HplsqlException.toTStatus(e));
         }

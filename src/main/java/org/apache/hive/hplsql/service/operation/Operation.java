@@ -1,6 +1,7 @@
 package org.apache.hive.hplsql.service.operation;
 
 import org.apache.hive.hplsql.service.common.exception.HplsqlException;
+import org.apache.hive.hplsql.service.common.handle.OperationHandle;
 import org.apache.hive.hplsql.service.session.HplsqlSession;
 import org.apache.hive.service.cli.FetchOrientation;
 import org.apache.hive.service.cli.RowSet;
@@ -24,13 +25,10 @@ public abstract class Operation {
     protected volatile Future<?> backgroundHandle;
     protected OperationResult operationResult;
 
-    private long operationTimeout;
-    private volatile long lastAccessTime;
-    //operation创建时间
     private final long beginTime;
+    private volatile long lastAccessTime;
     protected long operationStart;
     protected long operationComplete;
-    //TODO queryState
 
     protected Operation(HplsqlSession parentSession, OperationType opType) {
         this(parentSession, null, opType);
@@ -42,13 +40,6 @@ public abstract class Operation {
         beginTime = System.currentTimeMillis();
         lastAccessTime = beginTime;
     }
-
-    /**
-     * Implemented by subclass of Operation class to execute specific behaviors.
-     *
-     * @throws HplsqlException
-     */
-    protected abstract void runInternal() throws HplsqlException;
 
     public boolean shouldRunAsync() {
         return false; // Most operations cannot run asynchronously.
@@ -62,14 +53,7 @@ public abstract class Operation {
 
     public abstract void close() throws HplsqlException;
 
-    public void run() throws HplsqlException {
-        // TODO beforeRun();设置前置条件 相关配置等，如日志
-        try {
-            runInternal();
-        } finally {
-            // TODO afterRun(); 清除资源
-        }
-    }
+    public abstract void run() throws HplsqlException;
 
     /**
      * 设置operation状态
@@ -142,23 +126,8 @@ public abstract class Operation {
      * @return
      */
     public OperationStatus getStatus() {
-        String taskStatus = null;
-        try {
-            taskStatus = getTaskStatus();
-        } catch (HplsqlException sqlException) {
-            LOG.error("Error getting task status for " + opHandle.toString(), sqlException);
-        }
-        return new OperationStatus(state, taskStatus, operationStart, operationComplete, hasResultSet,
+        return new OperationStatus(state,operationStart, operationComplete, hasResultSet,
                 operationException);
-    }
-
-    /**
-     * 获取hplsql任务执行状态
-     * @return
-     * @throws HplsqlException
-     */
-    public String getTaskStatus() throws HplsqlException {
-        return null;
     }
 
     public Future<?> getBackgroundHandle() {
